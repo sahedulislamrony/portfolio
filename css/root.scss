@@ -1,0 +1,43 @@
+//  All Variables and mixin write down here 
+
+
+// COLORS
+
+$bg:#212529;
+$txt-w:#dee2e6;
+
+
+
+
+
+// MIXIN
+
+@mixin circle($radius) {
+    width:$radius;
+    height:$radius;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+@mixin reset-anchor {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+       
+        color: inherit;
+        outline: none;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+      }
+}

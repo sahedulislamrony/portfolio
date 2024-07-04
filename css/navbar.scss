@@ -1,0 +1,33 @@
+@import 'root';
+
+nav.navbar {
+   .navbar-brand {
+    padding-left:4rem;
+   
+    img {
+        @include circle(5rem);
+        border:1px solid gray;
+    }
+    
+    
+   }
+ 
+
+    ul {
+
+
+        li.nav-item {
+            font-size: 2rem;
+            padding:.5rem 1rem;
+            margin:.5rem 1rem;
+            border:1px solid blue;
+
+            button {
+                font-size: 2rem;
+            }
+         
+        }
+    }
+    
+
+}

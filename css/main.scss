@@ -1,0 +1,41 @@
+// Import fieles 
+
+@import 'root';
+
+
+
+
+
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size:62.5%;
+    // For 1rem = 10 px 
+}
+
+
+
+
+body {
+    
+    background-color:$bg;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $txt-w;
+}  
+
+
+
+
+
+// Other Components 
+
+
+// @import 'navbar';

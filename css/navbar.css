@@ -1,0 +1,19 @@
+nav.navbar .navbar-brand {
+  padding-left: 4rem;
+}
+nav.navbar .navbar-brand img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+nav.navbar ul li.nav-item {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+  border: 1px solid blue;
+}
+nav.navbar ul li.nav-item button {
+  font-size: 2rem;
+}/*# sourceMappingURL=navbar.css.map */
