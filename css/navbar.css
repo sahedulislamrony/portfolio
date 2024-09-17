@@ -1,6 +1,6 @@
 nav.navbar {
   background: #323643;
-  border-color: #00ccff;
+  border-color: #32a1e1;
 }
 nav.navbar .navbar-brand img {
   width: 5rem;
@@ -14,14 +14,14 @@ nav.navbar button.navbar-toggler {
   height: 4.5rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid #dee2e6;
+  border: 1px solid #e2dfdf;
   box-shadow: none;
 }
 nav.navbar button.navbar-toggler:focus {
   box-shadow: none;
 }
 nav.navbar button.navbar-toggler:hover {
-  border-color: #00ccff;
+  border-color: #32a1e1;
   box-shadow: none;
 }
 nav.navbar button.navbar-toggler i {
@@ -29,7 +29,7 @@ nav.navbar button.navbar-toggler i {
   font-size: 2.5rem;
 }
 nav.navbar button.navbar-toggler i:hover {
-  color: #00ccff;
+  color: #32a1e1;
 }
 nav.navbar button.navbar-toggler.show i {
   transition: all 0.3s;
@@ -40,13 +40,21 @@ nav.navbar ul li.nav-item {
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: normal;
-  color: #dee2e6;
   font-size: 2.1rem;
   padding: 0rem 1rem;
   margin: 0.5rem 1rem;
 }
 nav.navbar ul li.nav-item:last-child {
   border: 1px solid #f7f7f7;
+}
+nav.navbar ul li.nav-item:last-child:hover {
+  border-color: #32a1e1;
+}
+nav.navbar ul li.nav-item .nav-link {
+  color: #e2dfdf;
+}
+nav.navbar ul li.nav-item .nav-link:hover {
+  color: #32a1e1;
 }
 nav.navbar ul li.nav-item a {
   text-decoration: none;
@@ -69,6 +77,6 @@ nav.navbar ul li.nav-item a:hover, nav.navbar ul li.nav-item a:focus, nav.navbar
   }
   nav.navbar ul li.nav-item:last-child span {
     padding: 0.7rem 1rem;
-    border: 1px solid #f7f7f7;
+    border: 1px solid #32a1e1;
   }
 }/*# sourceMappingURL=navbar.css.map */

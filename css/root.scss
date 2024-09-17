@@ -1,5 +1,4 @@
-//  All Variables and mixin write down here 
-
+//  All Variables and mixin write down here
 
 // COLORS
 
@@ -10,44 +9,36 @@ $fourth-color: #f7f7f7;
 
 $fifth-color: #495057;
 
-$bg:#212529;
-$txt-w:#dee2e6;
+$bg: #212529;
+$txt-w: #e2dfdf;
 $border: #00ccff;
-
-
-
-
 
 // MIXIN
 
 @mixin circle($radius) {
-    width:$radius;
-    height:$radius;
-    border-radius: 50%;
-    overflow:hidden;
+  width: $radius;
+  height: $radius;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 @mixin reset-anchor {
+  text-decoration: none;
+  border: none;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
     text-decoration: none;
-    border: none;
+    color: inherit;
     outline: none;
-
-    &:hover,
-    &:focus,
-    &:active {
-        text-decoration: none;
-        color: inherit;
-        outline: none;
-    }
-
+  }
 }
 
-
 @mixin font-primary {
-    
-            font-family: "PT Serif", serif;
-            font-weight: 400; 
-            font-style: normal;
-            // Font weight 400,700 , style normal and italic
-        
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  // Font weight 400,700 , style normal and italic
 }

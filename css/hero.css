@@ -1,0 +1,58 @@
+.content.hero {
+  width: 100%;
+  height: auto;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.content.hero .text {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+.content.hero .text h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: beige;
+}
+.content.hero .text h1 i {
+  color: #32a1e1;
+}
+.content.hero .img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content.hero .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content.hero p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: beige;
+}
+.content.hero p span {
+  color: #32a1e1;
+}
+.content.hero p span a {
+  color: #32a1e1;
+  text-decoration: none;
+}
+.content.hero p span a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=hero.css.map */
