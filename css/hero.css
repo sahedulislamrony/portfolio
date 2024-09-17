@@ -40,7 +40,7 @@
 .content.hero p {
   font-size: 2rem;
   margin-top: 2rem;
-  padding-left: 2rem;
+  margin-left: 3rem;
   font-family: "Adamina", serif;
   font-weight: 400;
   font-style: normal;
@@ -48,6 +48,7 @@
 }
 .content.hero p span {
   color: #32a1e1;
+  font-weight: bold;
 }
 .content.hero p span a {
   color: #32a1e1;

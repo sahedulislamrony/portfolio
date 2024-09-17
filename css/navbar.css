@@ -16,6 +16,7 @@ nav.navbar button.navbar-toggler {
   overflow: hidden;
   border: 1px solid #e2dfdf;
   box-shadow: none;
+  color: beige;
 }
 nav.navbar button.navbar-toggler:focus {
   box-shadow: none;
