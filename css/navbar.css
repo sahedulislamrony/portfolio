@@ -1,19 +1,74 @@
-nav.navbar .navbar-brand {
-  padding-left: 4rem;
+nav.navbar {
+  background: #323643;
+  border-color: #00ccff;
 }
 nav.navbar .navbar-brand img {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid gray;
+  border: 1px solid #f7f7f7;
+}
+nav.navbar button.navbar-toggler {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  box-shadow: none;
+}
+nav.navbar button.navbar-toggler:focus {
+  box-shadow: none;
+}
+nav.navbar button.navbar-toggler:hover {
+  border-color: #00ccff;
+  box-shadow: none;
+}
+nav.navbar button.navbar-toggler i {
+  transition: all 0.3s;
+  font-size: 2.5rem;
+}
+nav.navbar button.navbar-toggler i:hover {
+  color: #00ccff;
+}
+nav.navbar button.navbar-toggler.show i {
+  transition: all 0.3s;
+  transform: rotate(-90deg);
+  transform-origin: center;
 }
 nav.navbar ul li.nav-item {
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #dee2e6;
+  font-size: 2.1rem;
+  padding: 0rem 1rem;
   margin: 0.5rem 1rem;
-  border: 1px solid blue;
 }
-nav.navbar ul li.nav-item button {
-  font-size: 2rem;
+nav.navbar ul li.nav-item:last-child {
+  border: 1px solid #f7f7f7;
+}
+nav.navbar ul li.nav-item a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+nav.navbar ul li.nav-item a:hover, nav.navbar ul li.nav-item a:focus, nav.navbar ul li.nav-item a:active {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+@media (max-width: 991.98px) {
+  nav.navbar ul li.nav-item {
+    padding: 0;
+    margin: 0.5rem 0rem;
+  }
+  nav.navbar ul li.nav-item:last-child {
+    border: none;
+  }
+  nav.navbar ul li.nav-item:last-child span {
+    padding: 0.7rem 1rem;
+    border: 1px solid #f7f7f7;
+  }
 }/*# sourceMappingURL=navbar.css.map */

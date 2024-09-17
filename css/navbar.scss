@@ -1,33 +1,87 @@
 @import 'root';
 
 nav.navbar {
-   .navbar-brand {
-    padding-left:4rem;
-   
-    img {
+    background: $first-color;
+    border-color:#00ccff;
+    
+    .navbar-brand {
+        img {
         @include circle(5rem);
-        border:1px solid gray;
+        border:1px solid $fourth-color;
+         }  
     }
+   button.navbar-toggler {
+    @include circle(4.5rem);
+     border: 1px solid $txt-w;
+     box-shadow: none;
     
-    
-   }
- 
-
-    ul {
-
-
-        li.nav-item {
-            font-size: 2rem;
-            padding:.5rem 1rem;
-            margin:.5rem 1rem;
-            border:1px solid blue;
-
-            button {
-                font-size: 2rem;
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover {
+            border-color:#00ccff;
+            box-shadow: none;
+        }
+        i {
+            
+            transition: all 0.3s;
+            font-size:2.5rem;
+            
+            &:hover {
+                color:#00ccff;
             }
-         
+           
+        }
+      &.show i{
+           transition: all 0.3s;
+           transform: rotate(-90deg);
+           transform-origin:center;
+        }
+   }
+
+    ul{
+        li.nav-item {
+            @include font-primary;
+            color:$txt-w;
+            font-size: 2.1rem;
+            padding: 0rem 1rem;
+            margin: .5rem 1rem;
+            
+
+            &:last-child {
+                border: 1px solid $fourth-color;
+            }
+
+
+            a{
+                @include reset-anchor;
+            }
+
         }
     }
     
 
+}
+
+//  Bootstrap lg Breakpoints
+@media (max-width: 991.98px) {
+    nav.navbar {
+
+        ul {
+            li.nav-item {
+                padding:0;
+                margin: .5rem 0rem;
+
+                &:last-child{
+                        border:none;
+                        span {
+                            padding: .7rem 1rem;
+                            border: 1px solid  $fourth-color;
+
+                        }
+                    }
+
+            }
+        }
+    }
 }

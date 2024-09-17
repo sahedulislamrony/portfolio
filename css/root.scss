@@ -3,8 +3,16 @@
 
 // COLORS
 
+$first-color: #323643;
+$second-color: #606470;
+$third-color: #93deff;
+$fourth-color: #f7f7f7;
+
+$fifth-color: #495057;
+
 $bg:#212529;
 $txt-w:#dee2e6;
+$border: #00ccff;
 
 
 
@@ -21,23 +29,25 @@ $txt-w:#dee2e6;
 
 @mixin reset-anchor {
     text-decoration: none;
-    color: inherit;
-    background: none;
-    padding: 0;
-    margin: 0;
     border: none;
     outline: none;
 
     &:hover,
     &:focus,
     &:active {
-       
+        text-decoration: none;
         color: inherit;
         outline: none;
     }
 
-    &:hover,
-    &:focus {
-        text-decoration: none;
-      }
+}
+
+
+@mixin font-primary {
+    
+            font-family: "PT Serif", serif;
+            font-weight: 400; 
+            font-style: normal;
+            // Font weight 400,700 , style normal and italic
+        
 }
