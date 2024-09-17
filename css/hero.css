@@ -40,11 +40,11 @@
 .content.hero p {
   font-size: 2rem;
   margin-top: 2rem;
-  margin-left: 3rem;
   font-family: "Adamina", serif;
   font-weight: 400;
   font-style: normal;
   color: beige;
+  text-align: center;
 }
 .content.hero p span {
   color: #32a1e1;
@@ -56,4 +56,15 @@
 }
 .content.hero p span a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .content.hero .text h1 {
+    font-size: 4rem;
+  }
+  .content.hero p {
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }/*# sourceMappingURL=hero.css.map */

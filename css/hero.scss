@@ -44,11 +44,11 @@
   p {
     font-size: 2rem;
     margin-top: 2rem;
-    margin-left: 3rem;
     font-family: "Adamina", serif;
     font-weight: 400;
     font-style: normal;
     color: beige;
+    text-align: center;
     span {
       color: #32a1e1;
       font-weight: bold;
@@ -59,6 +59,22 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+// sm breakpoint
+@media (max-width: 576px) {
+  .content.hero {
+    .text {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    p {
+      font-size: 1.8rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 }
