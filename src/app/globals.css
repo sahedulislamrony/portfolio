@@ -7,11 +7,24 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* color palette  */
+  --color-main: var(--main);
+  --color-highlight: var(--highlight-text);
+  --color-sc: #502344;
+  --color-tr: #974256;
+  --color-c1: #d27158;
+  --color-c2: #f6b058;
+  --color-c3: #f9f871;
 }
 
 :root {
+  /* --main: hsl(265, 63%, 7%); */
+
+  --main: #030303;
+  --highlight-text: hsl(271, 58%, 58%);
   --background: hsl(0 0% 100%);
-  --foreground: hsl(240 10% 3.9%);
+  --foreground: hsl(265, 63%, 7%);
   --card: hsl(0 0% 100%);
   --card-foreground: hsl(240 10% 3.9%);
   --popover: hsl(0 0% 100%);
@@ -38,8 +51,8 @@
 }
 
 .dark {
-  --background: hsl(240 10% 3.9%);
-  --foreground: hsl(0 0% 98%);
+  --background: var(--main);
+  --foreground: hsl(0 0% 100%);
   --card: hsl(240 10% 3.9%);
   --card-foreground: hsl(0 0% 98%);
   --popover: hsl(240 10% 3.9%);
@@ -102,4 +115,14 @@
   body {
     @apply bg-background text-foreground;
   }
+  html {
+    @apply antialiased scroll-smooth;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+.spaceX {
+  @apply px-20;
 }
