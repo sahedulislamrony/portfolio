@@ -23,8 +23,6 @@
 
   --main: #030303;
   --highlight-text: hsl(271, 58%, 58%);
-  --background: hsl(0 0% 100%);
-  --foreground: hsl(265, 63%, 7%);
   --card: hsl(0 0% 100%);
   --card-foreground: hsl(240 10% 3.9%);
   --popover: hsl(0 0% 100%);
@@ -48,11 +46,13 @@
   --chart-4: hsl(43 74% 66%);
   --chart-5: hsl(27 87% 67%);
   --radius: 0.6rem;
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(240 10% 3.9%);
 }
 
 .dark {
-  --background: var(--main);
-  --foreground: hsl(0 0% 100%);
+  --background: hsl(240 10% 3.9%);
+  --foreground: hsl(0 0% 98%);
   --card: hsl(240 10% 3.9%);
   --card-foreground: hsl(0 0% 98%);
   --popover: hsl(240 10% 3.9%);
@@ -106,6 +106,14 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* fonts  */
+
+  --font-heading: var(--font-heading);
+  --font-main: var(--font-main);
+  --font-logo: var(--font-logo);
+  --font-noto: var(--font-noto);
+  --font-mono: var(--font-noto-mono);
 }
 
 @layer base {
@@ -119,10 +127,11 @@
     @apply antialiased scroll-smooth;
   }
   button {
-    @apply cursor-pointer;
+    @apply cursor-pointer font-mono;
   }
 }
 
+/* custom class */
 .spaceX {
   @apply px-20;
 }

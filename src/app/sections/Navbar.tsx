@@ -1,8 +1,7 @@
 "use client";
 
 import { SparklesText } from "@/components/magicui/sparkles-text";
-import { useTheme } from "next-themes";
-import { Download, Moon, Rocket, Sparkles, Sun } from "lucide-react";
+import { Download, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
@@ -34,11 +33,14 @@ function LeftSec() {
   return (
     <div className="flex items-center  flex-1">
       <SparklesText
-        text="Sahedul."
-        className="text-3xl font-bold text-white cursor-pointer select-none"
+        text="Sahedul"
+        className="text-3xl  text-white cursor-pointer select-none font-logo  font-[400]"
         sparklesCount={5}
         colors={["#0ea5e9", "#fff", "#0ea5e9", "#00ccff"]}
       />
+      <span className="text-3xl text-sky-500 cursor-pointer select-none font-logo  font-[400]">
+        .
+      </span>
     </div>
   );
 }
@@ -48,7 +50,7 @@ function CenterSec() {
     <div
       className={cn(
         // base design
-        "flex space-x-10 text-gray-300 text-lg font-bold  flex-2 items-center justify-center"
+        "flex space-x-10 text-gray-300   flex-2 items-center justify-center "
         // responsive design
       )}
     >
@@ -71,29 +73,30 @@ function NavItem({
   className?: string;
 }) {
   return (
-    <a href={href} className={cn("hover:text-sky-400", className)}>
+    <a
+      href={href}
+      className={cn(
+        "hover:text-sky-400 text-lg font-mono font-[700]",
+        className
+      )}
+    >
       {text}
     </a>
   );
 }
 
 function RightSec() {
-  const { theme, setTheme } = useTheme();
   return (
     <div className="flex items-center justify-end space-x-4  flex-1">
-      <Button variant="outline" className=" text-gray-300 hover:text-sky-400">
-        <Download /> Download CV
+      <Button
+        variant="outline"
+        className=" text-white hover:text-sky-400 font-[600] border-sky-800"
+      >
+        <Download className="font-[800]" /> Download CV
       </Button>
-      <Button className="bg-gradient-to-r from-sky-700 to-indigo-500 text-gray-100">
+      <Button className="bg-gradient-to-r from-sky-700 to-indigo-500 text-gray-100 font-[800]">
         <Rocket /> Hire Me
       </Button>
-
-      <button
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition"
-      >
-        {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-      </button>
     </div>
   );
 }
