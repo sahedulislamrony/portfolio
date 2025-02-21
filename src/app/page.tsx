@@ -1,18 +1,20 @@
 "use client";
 
-import AboutSection from "./sections/AboutSection";
-import HeroSection from "./sections/HeroSection";
+import About from "./sections/About";
+import Education from "./sections/Education";
+import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <AboutSection />
+      <Hero />
+      <About />
+      <Education />
       <div
         id="home"
-        className=" bg-red-300  bg-no-repeat bg-cover bg-center w-full text-highlight h-screen text-7xl flex justify-center items-center font-extrabold"
+        className=" bg-transparent  bg-no-repeat bg-cover bg-center w-full text-highlight h-screen text-7xl flex justify-center items-center font-extrabold"
       >
         Welcome Home.
       </div>

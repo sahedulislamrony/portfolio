@@ -15,13 +15,9 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-6xl font-logo font-[400] bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 mb-4">
+          <h2 className="text-6xl font-logo font-[400] text-white mb-4">
             About Me
           </h2>
-          <p className="text-lg text-gray-300 font-mono font-[700]">
-            A passionate developer exploring the world of technology and
-            innovation.
-          </p>
         </div>
 
         {/* Content */}
@@ -56,20 +52,21 @@ function LeftSection() {
 
 function RightSection() {
   return (
-    <div className="flex-1 space-y-5 font-mono font-[400] ">
-      <p className="text-gray-200 leading-relaxed text-md">
+    <div className="flex-1 space-y-7 ">
+      <p className="text-gray-300 leading-relaxed text-md font-noto font-[600]">
         I am a Computer Science and Engineering (CSE) undergraduate at{" "}
-        <span className="font-bold text-purple-400">
+        <span className="font-[700] text-purple-400">
           Jashore University of Science and Technology (JUST)
         </span>
         , with a passion for{" "}
-        <span className="font-bold text-blue-400">Software Development</span>,{" "}
-        <span className="font-bold text-purple-400">
+        <span className="font-[700] text-blue-400">Software Development</span>,{" "}
+        <span className="font-[700] text-purple-400">
           Artificial Intelligence
         </span>
-        , and <span className="font-bold text-blue-400">Machine Learning</span>.
+        , and <span className="font-[700] text-blue-400">Machine Learning</span>
+        .
       </p>
-      <p className="text-gray-200 leading-relaxed text-md font-[400]">
+      <p className="text-gray-300 leading-relaxed text-md font-noto font-[600]">
         I enjoy building innovative and impactful applications that solve
         real-world problems. My goal is to master advanced programming concepts
         and explore cutting-edge technologies to push the boundaries of
@@ -103,7 +100,7 @@ function RightSection() {
         />
       </div>
       {/* Call-to-Action Button */}
-      <button className="text-black font-[700] flex gap-2 items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-3 rounded-sm w-fit hover:scale-105 transition-transform">
+      <button className="text-black  font-[700] flex gap-2 items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-3 rounded-sm w-fit ">
         <Download className="w-5 h-5" />
         <span>Download CV</span>
       </button>
@@ -113,7 +110,7 @@ function RightSection() {
 
 function InterestItem({ Icon, text }: { Icon: React.ReactNode; text: string }) {
   return (
-    <span className="inline-flex items-center px-4 py-2 rounded-full bg-gray-800 text-gray-200 text-sm font-medium hover:bg-gray-700 transition-colors">
+    <span className="inline-flex font-mono font-[600] items-center px-4 py-2 rounded-full bg-gray-800 text-gray-200 text-sm  hover:bg-gray-700 transition-colors">
       {Icon} {text}
     </span>
   );

@@ -56,9 +56,9 @@ function CenterSec() {
     >
       <NavItem href="#home" text="Home" />
       <NavItem href="#about" text="About" />
+      <NavItem href="#education" text="Education" />
       <NavItem href="#skills" text="Skills" />
       <NavItem href="#projects" text="Projects" />
-      <NavItem href="#contact" text="Contact" />
     </div>
   );
 }
