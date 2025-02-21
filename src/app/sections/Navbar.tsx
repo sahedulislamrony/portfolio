@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 export default function Navbar() {
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 bg-white/5 dark:bg-black/5 backdrop-blur-lg z-50">
+      <div className="fixed top-0 left-0 right-0 bg-white/5 dark:bg-black/5 backdrop-blur-lg z-50 spaceX">
         {/* main nav  */}
         <div className="flex justify-between items-center p-4 bg-transparent relative spaceX">
           {/* Left - Logo */}
@@ -90,7 +90,7 @@ function RightSec() {
     <div className="flex items-center justify-end space-x-4  flex-1">
       <Button
         variant="outline"
-        className=" text-white hover:text-sky-400 font-[600] border-sky-800"
+        className=" text-white bg-transparent hover:bg-white/9 hover:text-sky-400 font-[600] border-sky-800"
       >
         <Download className="font-[800]" /> Download CV
       </Button>

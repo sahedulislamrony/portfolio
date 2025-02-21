@@ -6,7 +6,7 @@ import Particles, {
   useParticalAnimation,
 } from "@/components/ui/Particles/Particles";
 import { cn } from "@/lib/utils";
-import { Download, PartyPopper, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Sparkles } from "lucide-react";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 
@@ -33,7 +33,7 @@ export default function HeroSection() {
       id="home"
       className={cn(
         // Base design
-        "relative w-full  spaceX h-screen flex justify-center items-end font-extrabold ",
+        "relative w-full  spaceX h-screen flex justify-center items-center bg-transparent font-extrabold  pt-[5rem] ",
         // Responsive design
         "flex-col md:flex-row"
       )}
@@ -64,7 +64,7 @@ export default function HeroSection() {
 
 function LeftSec() {
   return (
-    <div className="flex-1 h-[90%]  flex flex-col justify-start items-start  py-12 px-2 pt-32  z-20 ">
+    <div className="flex-1  flex flex-col justify-start items-start  py-12 px-2 pt-7  z-20 ">
       <h1 className="text-4xl text-gray-100  font-logo font-[900] ">
         Hi , I&apos;m
         <span className="block mt-1.5 text-4xl text-transparent bg-clip-text bg-gradient-to-r  from-white  to-sky-500">
@@ -82,12 +82,14 @@ function LeftSec() {
       </p>
 
       <div className="flex gap-4 mt-10">
-        <Button className="py-6 px-8 text-md bg-gradient-to-r from-sky-500 to-indigo-900 text-white font-semibold hover:from-sky-600 hover:to-indigo-600 transition-all   border border-input shadow-sm rounded-sm">
-          <PartyPopper className="mr-1" /> View My Work
-        </Button>
+        {/* Call-to-Action Button */}
+        <button className="text-black flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-3 rounded-sm w-fit hover:scale-105 transition-transform">
+          <span>Explore My Work</span>
+          <ArrowRight className="w-5 h-5" />
+        </button>
         <Button
           variant="outline"
-          className="py-6 px-8 text-md  border-sky-500 rounded-sm  text-white  hover:text-sky-500"
+          className="py-6 px-8 text-md  border-sky-500 rounded-sm  text-white  hover:text-sky-500 hover:scale-105 transition-transform"
         >
           <Download className="mr-1" /> Download CV
         </Button>
@@ -111,16 +113,16 @@ function RightSec() {
   return (
     <div
       ref={sectionRef}
-      className="flex-1 relative h-[90%] w-full flex justify-center items-center z-10 "
+      className="flex-1 relative h-[40rem] pt-0 mt-0   flex justify-center items-center z-10 "
     >
       <Orb
         hoverIntensity={0.5}
         rotateOnHover={true}
         hue={0}
         forceHoverState={false}
-        className="absolute w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+        className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
       />
-      <div className="z-5  size-[32rem] bg-transparent  rounded-full flex justify-center items-center text-white text-2xl font-bold">
+      <div className="z-5  size-[75%] bg-transparent  rounded-full flex justify-center items-center text-white text-2xl font-bold">
         <Image
           src="/rony2.png"
           alt="Sahedul Islam Rony"

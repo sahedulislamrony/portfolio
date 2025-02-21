@@ -1,5 +1,6 @@
 "use client";
 
+import AboutSection from "./sections/AboutSection";
 import HeroSection from "./sections/HeroSection";
 import Navbar from "./sections/Navbar";
 
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Navbar />
       <HeroSection />
+      <AboutSection />
       <div
         id="home"
         className=" bg-red-300  bg-no-repeat bg-cover bg-center w-full text-highlight h-screen text-7xl flex justify-center items-center font-extrabold"
