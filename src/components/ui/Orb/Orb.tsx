@@ -10,7 +10,8 @@ interface OrbProps {
   forceHoverState?: boolean;
   className?: ClassValue;
 }
-// global variable to store the animation frame id
+
+// Global variable to store the animation frame ID
 let rafId: number;
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 let update = (t: number) => {};
@@ -20,7 +21,7 @@ export default function Orb({
   hoverIntensity = 0.2,
   rotateOnHover = true,
   forceHoverState = false,
-  className: classNmae,
+  className,
 }: OrbProps) {
   const ctnDom = useRef<HTMLDivElement>(null);
 
@@ -293,7 +294,9 @@ export default function Orb({
     };
   }, [hue, hoverIntensity, rotateOnHover, forceHoverState, vert, frag]);
 
-  return <div ref={ctnDom} className={cn("w-full h-full", classNmae)} />;
+  return (
+    <div ref={ctnDom} className={cn(" w-full h-full absolute ", className)} />
+  );
 }
 
 const useOrbAnimation = () => {

@@ -114,6 +114,19 @@
   --font-logo: var(--font-logo);
   --font-noto: var(--font-noto);
   --font-mono: var(--font-noto-mono);
+  --animate-shine: shine var(--duration) infinite linear;
+  /* ---break---  */
+  @keyframes shine {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    to {
+      background-position: 0% 0%;
+    }
+  }
 }
 
 @layer base {

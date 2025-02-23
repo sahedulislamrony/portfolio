@@ -24,10 +24,10 @@ export default function Education() {
         {/* Education Timeline */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-1/2 w-1 h-full bg-gradient-to-b from-purple-500 to-sky-500  transform -translate-x-1/2"></div>
+          <div className="absolute left-1/2 w-1 h-full bg-gradient-to-b from-gray-300 to-sky-500  transform -translate-x-1/2"></div>
 
           {/* Top Circle */}
-          <div className="absolute left-1/2 w-6 h-6 bg-purple-500 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute left-1/2 w-6 h-6 bg-gray-300 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
 
           {/* Timeline Items */}
           <div className="space-y-8">
@@ -39,7 +39,7 @@ export default function Education() {
                 duration={achievement.duration}
                 description={achievement.description}
                 tags={achievement.tags}
-                isOdd={index % 2 !== 0} // Odd-indexed items on the right, even on the left
+                isOdd={index % 2 !== 0}
                 link={achievement?.link}
               />
             ))}

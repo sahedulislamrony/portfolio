@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import { Spotlight } from "@/components/ui/spotlight-new";
 
 type AnimationInstance = {
   start: () => void;
@@ -33,7 +34,7 @@ export default function HeroSection() {
       id="home"
       className={cn(
         // Base design
-        "relative w-full  spaceX h-screen flex justify-center items-center bg-transparent font-extrabold  pt-[5rem] ",
+        "relative w-full overflow-hidden  spaceX h-screen flex justify-center items-center bg-transparent font-extrabold  pt-[5rem] ",
         // Responsive design
         "flex-col md:flex-row"
       )}
@@ -52,6 +53,9 @@ export default function HeroSection() {
         cameraDistance={5}
         className="absolute top-0 left-0 w-full h-full z-[5]"
       />
+
+      {/* Spotlight */}
+      <Spotlight className="z-5" />
 
       {/* Left Section */}
       <LeftSec />
@@ -113,22 +117,23 @@ function RightSec() {
   return (
     <div
       ref={sectionRef}
-      className="flex-1 relative h-[40rem] pt-0 mt-0   flex justify-center items-center z-10 "
+      className="flex-1  h-[40rem] pt-0 mt-0   flex justify-center items-center z-10 "
     >
-      <Orb
-        hoverIntensity={0.5}
-        rotateOnHover={true}
-        hue={0}
-        forceHoverState={false}
-        className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
-      />
-      <div className="z-5  size-[75%] bg-transparent  rounded-full flex justify-center items-center text-white text-2xl font-bold">
+      <div className="z-5 relative  bg-transparent  size-[75%]   flex justify-center items-center text-white text-2xl font-bold">
         <Image
           src="/rony2.png"
           alt="Sahedul Islam Rony"
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           className="rounded-full w-full h-full "
+        />
+
+        <Orb
+          hoverIntensity={0.5}
+          rotateOnHover={true}
+          hue={0}
+          forceHoverState={false}
+          className="absolute-center z-10 w-[calc(100%_+_10rem)] h-[calc(100%_+_10rem)]"
         />
       </div>
     </div>

@@ -4,6 +4,8 @@ import About from "./sections/About";
 import Education from "./sections/Education";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Hero />
       <About />
       <Education />
+      <Skills />
+      <Projects />
       <div
         id="home"
         className=" bg-transparent  bg-no-repeat bg-cover bg-center w-full text-highlight h-screen text-7xl flex justify-center items-center font-extrabold"

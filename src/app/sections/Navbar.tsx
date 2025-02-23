@@ -5,6 +5,7 @@ import { Download, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -32,15 +33,17 @@ export default function Navbar() {
 function LeftSec() {
   return (
     <div className="flex items-center  flex-1">
-      <SparklesText
-        text="Sahedul"
-        className="text-3xl  text-white cursor-pointer select-none font-logo  font-[400]"
-        sparklesCount={5}
-        colors={["#0ea5e9", "#fff", "#0ea5e9", "#00ccff"]}
-      />
-      <span className="text-3xl text-sky-500 cursor-pointer select-none font-logo  font-[400]">
-        .
-      </span>
+      <Link href="/" className="flex items-center">
+        <SparklesText
+          text="Sahedul"
+          className="text-3xl  text-white cursor-pointer select-none font-logo  font-[400]"
+          sparklesCount={5}
+          colors={["#0ea5e9", "#fff", "#0ea5e9", "#00ccff"]}
+        />
+        <span className="text-3xl text-sky-500 cursor-pointer select-none font-logo  font-[400]">
+          .
+        </span>
+      </Link>
     </div>
   );
 }
