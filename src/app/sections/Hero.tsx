@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { Spotlight } from "@/components/ui/spotlight-new";
+// import { Spotlight } from "@/components/ui/spotlight-new";
 
 type AnimationInstance = {
   start: () => void;
@@ -55,7 +55,7 @@ export default function HeroSection() {
       />
 
       {/* Spotlight */}
-      <Spotlight className="z-5" />
+      {/* <Spotlight className="z-5" /> */}
 
       {/* Left Section */}
       <LeftSec />
@@ -87,13 +87,13 @@ function LeftSec() {
 
       <div className="flex gap-4 mt-10">
         {/* Call-to-Action Button */}
-        <button className="text-black flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-3 rounded-sm w-fit hover:scale-105 transition-transform">
+        <button className="text-black flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-3 rounded-sm w-fit  transition-transform">
           <span>Explore My Work</span>
           <ArrowRight className="w-5 h-5" />
         </button>
         <Button
           variant="outline"
-          className="py-6 px-8 text-md  border-sky-500 rounded-sm  text-white  hover:text-sky-500 hover:scale-105 transition-transform"
+          className="py-6 px-8 text-md  border-sky-500 rounded-sm  text-white  hover:text-sky-500  transition-transform"
         >
           <Download className="mr-1" /> Download CV
         </Button>

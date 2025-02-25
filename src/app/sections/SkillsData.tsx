@@ -1,27 +1,32 @@
-import React from "react";
 import {
-  FaCode,
-  FaCss3,
-  FaDatabase,
-  FaGitAlt,
-  FaGithub,
-  FaHtml5,
-  FaJava,
-  FaNodeJs,
-  FaPython,
-  FaReact,
-  FaSass,
-  FaTools,
-} from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiMongodb, SiPostman, SiTypescript } from "react-icons/si";
-import { GoBrowser } from "react-icons/go";
-import { RiNextjsLine, RiNotionFill, RiTailwindCssFill } from "react-icons/ri";
-import { CiServer } from "react-icons/ci";
-import { AiOutlineApi } from "react-icons/ai";
-import { GrMysql } from "react-icons/gr";
-import { IoLogoFirebase } from "react-icons/io5";
-import { PiBrainBold } from "react-icons/pi";
+  IconAPI,
+  IconBrain,
+  IconBrowser,
+  IconCode,
+  IconCss,
+  IconDatabase,
+  IconExpress,
+  IconFirebase,
+  IconGit,
+  IconGithub,
+  IconHtml,
+  IconJava,
+  IconJavascript,
+  IconMongoDB,
+  IconMySQL,
+  IconNextJS,
+  IconNode,
+  IconNotion,
+  IconPostman,
+  IconPython,
+  IconReact,
+  IconSass,
+  IconServer,
+  IconTailwind,
+  IconTools,
+  IconTypescript,
+} from "@/components/ui/Icons";
+import React from "react";
 
 interface Skill {
   name: string;
@@ -36,110 +41,110 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     title: "Language Skills",
-    icon: <FaCode size={18} className="text-sky-400" />,
+    icon: <IconCode size={18} className="text-sky-400" />,
     skills: [
-      { name: "C", icon: <FaCode size={16} className="text-sky-400" /> },
+      { name: "C", icon: <IconCode /> },
       {
         name: "C++",
-        icon: <FaCode size={16} className="text-purple-400" />,
+        icon: <IconCode className="text-purple-400" />,
       },
-      { name: "Java", icon: <FaJava size={16} className="text-sky-400" /> },
+      { name: "Java", icon: <IconJava /> },
       {
         name: "Python",
-        icon: <FaPython size={16} className="text-purple-400" />,
+        icon: <IconPython />,
       },
       {
         name: "JavaScript",
-        icon: <IoLogoJavascript size={16} className="text-sky-400" />,
+        icon: <IconJavascript />,
       },
       {
         name: "TypeScript",
-        icon: <SiTypescript size={16} className="text-purple-400" />,
+        icon: <IconTypescript />,
       },
     ],
   },
   {
     title: "Frontend",
-    icon: <GoBrowser size={18} className="text-sky-400" />,
+    icon: <IconBrowser size={18} className="text-sky-400" />,
     skills: [
-      { name: "HTML", icon: <FaHtml5 size={16} className="text-sky-400" /> },
-      { name: "CSS", icon: <FaCss3 size={16} className="text-purple-400" /> },
-      { name: "SASS", icon: <FaSass size={16} className="text-sky-400" /> },
+      { name: "HTML", icon: <IconHtml /> },
+      { name: "CSS", icon: <IconCss /> },
+      { name: "SASS", icon: <IconSass /> },
       {
         name: "TailwindCSS",
-        icon: <RiTailwindCssFill size={16} className="text-purple-400" />,
+        icon: <IconTailwind />,
       },
       {
         name: "React.js",
-        icon: <FaReact size={16} className="text-sky-400" />,
+        icon: <IconReact />,
       },
       {
         name: "Next.js",
-        icon: <RiNextjsLine size={16} className="text-purple-400" />,
+        icon: <IconNextJS className="text-purple-400" />,
       },
     ],
   },
   {
     title: "Backend",
-    icon: <CiServer size={18} className="text-sky-400" />,
+    icon: <IconServer className="text-sky-400" />,
     skills: [
       {
         name: "Node.js",
-        icon: <FaNodeJs size={16} className="text-sky-400" />,
+        icon: <IconNode />,
       },
       {
         name: "Express.js",
-        icon: <SiExpress size={16} className="text-purple-400" />,
+        icon: <IconExpress />,
       },
       {
         name: "Next.js",
-        icon: <RiNextjsLine size={16} className="text-purple-400" />,
+        icon: <IconNextJS size={16} className="text-purple-400" />,
       },
       {
         name: "REST APIs",
-        icon: <AiOutlineApi size={16} className="text-sky-400" />,
+        icon: <IconAPI className="text-zinc-400" />,
       },
 
       {
         name: "Firebase",
-        icon: <IoLogoFirebase size={16} className="text-sky-400" />,
+        icon: <IconFirebase />,
       },
     ],
   },
   {
     title: "Databases",
-    icon: <FaDatabase size={18} className="text-sky-400" />,
+    icon: <IconDatabase className="text-sky-400" />,
     skills: [
       {
         name: "MongoDB",
-        icon: <SiMongodb size={16} className="text-sky-400" />,
+        icon: <IconMongoDB />,
       },
       {
         name: "MySQL",
-        icon: <GrMysql size={16} className="text-purple-400" />,
+        icon: <IconMySQL />,
       },
     ],
   },
   {
     title: "Tools",
-    icon: <FaTools size={18} className="text-sky-400" />,
+    icon: <IconTools className="text-sky-400" />,
     skills: [
-      { name: "Git", icon: <FaGitAlt size={16} className="text-sky-400" /> },
+      { name: "Git", icon: <IconGit /> },
       {
         name: "Github",
-        icon: <FaGithub size={16} className="text-purple-400" />,
+        icon: <IconGithub />,
       },
       {
         name: "Notion ",
-        icon: <RiNotionFill size={16} className="text-purple-400" />,
+        icon: <IconNotion />,
       },
       {
         name: "Postman",
-        icon: <SiPostman size={16} className="text-purple-400" />,
+        icon: <IconPostman />,
       },
       {
         name: "AI Tools",
-        icon: <PiBrainBold size={16} className="text-sky-400" />,
+        icon: <IconBrain />,
       },
     ],
   },

@@ -1,6 +1,6 @@
 @import "tailwindcss";
-
 @plugin "tailwindcss-animate";
+@config "../../tailwind.config.ts";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -114,6 +114,7 @@
   --font-logo: var(--font-logo);
   --font-noto: var(--font-noto);
   --font-mono: var(--font-noto-mono);
+
   --animate-shine: shine var(--duration) infinite linear;
   /* ---break---  */
   @keyframes shine {
