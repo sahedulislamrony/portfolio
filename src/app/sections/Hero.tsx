@@ -1,10 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Orb, { useOrbAnimation } from "@/components/ui/Orb/Orb";
-import Particles, {
-  useParticalAnimation,
-} from "@/components/ui/Particles/Particles";
+import Orb, { useOrbAnimation } from "@/components/ui/Orb";
+import Particles, { useParticalAnimation } from "@/components/ui/Particles";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
 import { useEffect, useRef } from "react";
