@@ -1,73 +1,101 @@
-import { cn } from "@/lib/utils";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import ContactForm from "@/components/ContactForm";
+import {
+  IconFacebook,
+  IconGithub,
+  IconInsta,
+  IconLinkedIn,
+  IconX,
+} from "@/components/ui/Icons";
 
-export default function GetInTouch() {
+export default function Contact() {
   return (
     <section
-      id="get-in-touch"
-      className={cn("relative py-32 px-4 overflow-hidden bg-black", {
-        "text-white": true,
-      })}
+      id="contact"
+      className="py-20 pb-20 bg-transparent overflow-hidden  relative"
     >
-      {/* Background Gradient */}
-      <div
-        className={cn(
-          "absolute inset-0 bg-gradient-to-br from-purple-900/50 to-sky-900/50 animate-gradient"
-        )}
-      ></div>
+      <div className="container mx-auto px-4 relative">
+        {/* Section Title */}
+        <div className="text-center mb-16 font-logo font-[400]">
+          <h2 className="text-6xl font-bold mb-4 text-white">Contact Me</h2>
+          {/* <p className="text-lg font-mono font-[600] text-gray-300">
+            Let&apos;s build something amazing together.
+          </p> */}
+        </div>
 
-      {/* Container */}
-      <div
-        className={cn("container mx-auto max-w-4xl relative z-10 text-center")}
-      >
-        {/* Heading */}
-        <h1
-          className={cn("text-5xl md:text-7xl font-bold mb-8", {
-            "text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-sky-400":
-              true, // Gradient text
-          })}
-        >
-          Step into the
-          <br />
-          <span className={cn("text-6xl md:text-8xl")}>future of design</span>
-        </h1>
+        {/* Animated Gradients */}
+        <div className="absolute top-20 left-0 h-96 w-96 rounded-full blur-3xl opacity-20  bg-gradient-to-r from-purple-500 to-sky-500 animate-spin"></div>
+        <div className="absolute bottom-10 right-0 h-96 w-96 rounded-full blur-3xl opacity-20 bg-gradient-to-r from-purple-500 to-sky-500 animate-spin"></div>
 
-        {/* Subheading */}
-        <p className={cn("text-lg md:text-xl text-white/70 mb-12")}>
-          Let’s create something extraordinary together. Reach out and let’s
-          bring your vision to life.
-        </p>
+        <div className="max-w-4xl mx-auto bg-[url('/bgContact3.png')] bg-center bg-cover bg-no-repeat backdrop-blur-md rounded-xl shadow-2xl shadow-gray-800 overflow-hidden flex flex-col md:flex-row">
+          {/* Left Side - Contact Form */}
+          <ContactForm />
 
-        {/* Social Media Links */}
-        <div className={cn("flex justify-center gap-6")}>
-          {[
-            {
-              icon: <FaGithub size={24} />,
-              href: "https://github.com/yourusername",
-            },
-            {
-              icon: <FaLinkedin size={24} />,
-              href: "https://linkedin.com/in/yourusername",
-            },
-            {
-              icon: <FaEnvelope size={24} />,
-              href: "mailto:youremail@example.com",
-            },
-          ].map((link, i) => (
-            <a
-              key={i}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                "p-4 rounded-full bg-white/10 border border-white/20 text-white/50 hover:bg-white/20 hover:text-white transition-all duration-300 backdrop-blur-lg"
-              )}
-            >
-              {link.icon}
-            </a>
-          ))}
+          {/* Right Side - Social Media Links */}
+          <ContactLinks />
         </div>
       </div>
     </section>
+  );
+}
+
+function ContactLinks() {
+  const linksData = [
+    {
+      name: "Facebook",
+      url: "https://facebook.com/sahedulislamFB",
+      icon: <IconFacebook className="size-7" />,
+    },
+    {
+      name: "Twitter",
+      url: "https://x.com/i_am_sahed",
+      icon: <IconX className="size-7" />,
+    },
+    {
+      name: "Instagram",
+      url: "https://instagram.com/i.am.sahed",
+      icon: <IconInsta className="size-7" />,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://linkedin.com/in/sahedulislamrony",
+      icon: <IconLinkedIn className="size-7" />,
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/sahedulislamrony",
+      icon: <IconGithub className="size-7 text-white" />,
+    },
+  ];
+
+  return (
+    <div className="w-full md:w-1/2 bg-trasparent p-8 flex flex-col justify-center items-center space-y-8">
+      {/* Top Heading */}
+      <h2 className="text-4xl lg:text-5xl font-roboto font-[900] text-white mb-4 text-center">
+        Let&apos;s Connect
+      </h2>
+
+      {/* Divider Line */}
+      <div className="w-16 h-1 bg-blue-500 rounded-full"></div>
+
+      {/* Social Media Icons */}
+      <div className="flex space-x-6">
+        {linksData.map((link, index) => (
+          <a
+            key={index}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-3xl  text-gray-200 transition-all duration-300 transform hover:scale-110`}
+          >
+            {link.icon}
+          </a>
+        ))}
+      </div>
+
+      {/* Subtle Call-to-Action Text */}
+      <p className="text-gray-300 text-sm mt-4 font-roboto font-[600] text-center">
+        Reach out and let&apos;s create something amazing together.
+      </p>
+    </div>
   );
 }

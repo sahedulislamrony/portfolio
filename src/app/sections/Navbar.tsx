@@ -1,16 +1,16 @@
 "use client";
 
 import { SparklesText } from "@/components/magicui/sparkles-text";
-import { Download, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { IconPhone, IconRocket } from "@/components/ui/Icons";
 
 export default function Navbar() {
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 bg-white/5 dark:bg-black/5 backdrop-blur-lg z-50 spaceX">
+      <div className="fixed top-0 left-0 right-0 bg-white/5 dark:bg-black/5 backdrop-blur-lg z-50 container">
         {/* main nav  */}
         <div className="flex justify-between items-center p-4 bg-transparent relative spaceX">
           {/* Left - Logo */}
@@ -91,14 +91,17 @@ function NavItem({
 function RightSec() {
   return (
     <div className="flex items-center justify-end space-x-4  flex-1">
-      <Button
-        variant="outline"
-        className=" text-white bg-transparent hover:bg-white/9 hover:text-sky-400 font-[600] border-sky-800"
-      >
-        <Download className="font-[800]" /> Download CV
-      </Button>
+      <a href="#contact">
+        <Button
+          variant="outline"
+          className="group text-white bg-transparent hover:bg-white/9 hover:text-sky-400 font-[600] border-sky-800"
+        >
+          <IconPhone className="font-[800] group-hover:text-sky-400" /> Contact
+          Me
+        </Button>
+      </a>
       <Button className="bg-gradient-to-r from-sky-700 to-indigo-500 text-gray-100 font-[800]">
-        <Rocket /> Hire Me
+        <IconRocket /> Hire Me
       </Button>
     </div>
   );

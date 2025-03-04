@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 import {
   IBM_Plex_Mono,
   IBM_Plex_Sans,
   Black_Ops_One,
   Noto_Sans,
   Noto_Sans_Mono,
+  Roboto,
 } from "next/font/google";
 import "./globals.css";
 
@@ -38,6 +40,12 @@ const noto_mono = Noto_Sans_Mono({
   style: ["normal"],
   subsets: ["latin"],
 });
+const roboto = Roboto({
+  variable: "--font-roboto",
+  weight: ["100", "300", "400", "500", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Sahedul Islam Rony",
@@ -50,9 +58,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${IBM_mono.variable} ${IBM_sans.variable} ${Black_Ops.variable} ${noto.variable} ${noto_mono.variable} antialiased`}
+        className={`${IBM_mono.variable} ${IBM_sans.variable} ${Black_Ops.variable} ${noto.variable} ${noto_mono.variable} ${roboto.variable} antialiased`}
         suppressHydrationWarning
       >
+        <Toaster richColors />
         {children}
       </body>
     </html>

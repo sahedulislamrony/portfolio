@@ -114,6 +114,7 @@
   --font-logo: var(--font-logo);
   --font-noto: var(--font-noto);
   --font-mono: var(--font-noto-mono);
+  --font-roboto: var(--font-roboto);
 
   --animate-shine: shine var(--duration) infinite linear;
   /* ---break---  */
@@ -146,12 +147,10 @@
 }
 
 @layer components {
-  /* custom class */
-  .spaceX {
-    @apply px-20;
-  }
-
   .absolute-center {
     @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+  .container {
+    @apply container px-20;
   }
 }

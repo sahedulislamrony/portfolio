@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-// import { Spotlight } from "@/components/ui/spotlight-new";
 
 type AnimationInstance = {
   start: () => void;
@@ -32,7 +31,7 @@ export default function HeroSection() {
       id="home"
       className={cn(
         // Base design
-        "relative w-full overflow-hidden  spaceX h-screen flex justify-center items-center bg-transparent font-extrabold  pt-[5rem] ",
+        "relative w-full overflow-hidden  container h-fit flex justify-center items-center bg-transparent font-extrabold  pt-[5rem] ",
         // Responsive design
         "flex-col md:flex-row"
       )}
@@ -73,7 +72,7 @@ function LeftSec() {
           Sahedul Islam Rony
         </span>
       </h1>
-      <p className="text-sky-500 py-4  leading-15 text-6xl ">
+      <p className="text-sky-500 py-4  leading-15 text-6xl font-logo font-[900]">
         Full Stack Developer & ML Enthusiast
       </p>
       <p className="font-mono font-[700] text-md mt-6 text-gray-100  mb-0 z-20">
@@ -156,10 +155,8 @@ function UnmountObserber({
     ([entry]) => {
       if (entry.isIntersecting) {
         start();
-        console.log("Start");
       } else {
         stop();
-        console.log("Stop");
         if (typeof onUnmount === "function") onUnmount();
       }
     },
@@ -171,7 +168,9 @@ function UnmountObserber({
   }
 
   const cleanup = () => {
-    observer.disconnect();
+    if (ref.current) {
+      observer.unobserve(ref.current);
+    }
   };
   return { cleanup };
 }

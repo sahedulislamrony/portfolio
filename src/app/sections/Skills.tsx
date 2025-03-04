@@ -6,9 +6,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className={cn("py-20 pb-30 bg-transparent overflow-hidden", {
-        spaceX: true,
-      })}
+      className={cn("py-20 pb-30 bg-transparent overflow-hidden container")}
     >
       <div
         className={cn("container mx-auto px-4 relative", {

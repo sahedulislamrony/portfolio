@@ -29,4 +29,20 @@ module.exports = {
       },
     },
   },
+
+  plugins: [
+    function ({ addUtilities }: { addUtilities: (utilities: object) => void }) {
+      const newUtilities = {
+        ".scrollbar-hide": {
+          /* Hide scrollbar for Chrome, Safari, and Opera */
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+          "-ms-overflow-style": "none", // IE and Edge
+          "scrollbar-width": "none", // Firefox
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };

@@ -13,12 +13,10 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className={cn("pt-25 pb-30 bg-transparent overflow-hidden", {
-        spaceX: true,
-      })}
+      className={cn("pt-25 pb-30 bg-transparent overflow-hidden container")}
     >
       <div
-        className={cn("container mx-auto px-4 relative", {
+        className={cn(" mx-auto px-4 relative", {
           // responsiveness
         })}
       >

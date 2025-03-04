@@ -11,8 +11,8 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-transparent spaceX">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 bg-transparent container ">
+      <div className=" mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-6xl font-logo font-[400] text-white mb-4">

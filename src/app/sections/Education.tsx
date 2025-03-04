@@ -9,9 +9,9 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="py-20  bg-transparent spaceX overflow-hidden"
+      className="py-20  bg-transparent container overflow-hidden"
     >
-      <div className="container mx-auto px-4 relative">
+      <div className=" mx-auto px-4 relative">
         {/* Section Title */}
         <div className="text-center mb-16 font-logo font-[400]">
           <h2 className="text-6xl font-bold text-white mb-4">Education</h2>
