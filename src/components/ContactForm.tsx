@@ -27,7 +27,7 @@ const ContactForm = () => {
           },
           body: JSON.stringify(formData),
         }),
-        delay(2000), // Waits for 2 seconds
+        delay(500), // Waits for 0.5 seconds
       ]);
 
       const result = await response.json();

@@ -12,6 +12,7 @@ import {
   FaNodeJs,
   FaPython,
   FaReact,
+  FaRegCopyright,
   FaRocketchat,
   FaSass,
   FaTools,
@@ -43,7 +44,7 @@ import { MdOutlineDoubleArrow } from "react-icons/md";
 import { HiMiniRocketLaunch } from "react-icons/hi2";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 
 // Define a type for icon props
@@ -125,3 +126,5 @@ export const IconFacebook = withDefaultProps(FaFacebookF, "text-white");
 export const IconLinkedIn = withDefaultProps(FaLinkedinIn, "text-white");
 export const IconInsta = withDefaultProps(GrInstagram, "text-white");
 export const IconX = withDefaultProps(FaXTwitter, "text-white");
+export const IconX2 = withDefaultProps(FaSquareXTwitter, "text-white");
+export const IconCopyright = withDefaultProps(FaRegCopyright, "text-white");

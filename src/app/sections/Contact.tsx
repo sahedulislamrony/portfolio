@@ -1,11 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import {
-  IconFacebook,
-  IconGithub,
-  IconInsta,
-  IconLinkedIn,
-  IconX,
-} from "@/components/ui/Icons";
+import { socialData } from "@/data/SocialData";
 
 export default function Contact() {
   return (
@@ -26,7 +20,7 @@ export default function Contact() {
         <div className="absolute top-20 left-0 h-96 w-96 rounded-full blur-3xl opacity-20  bg-gradient-to-r from-purple-500 to-sky-500 animate-spin"></div>
         <div className="absolute bottom-10 right-0 h-96 w-96 rounded-full blur-3xl opacity-20 bg-gradient-to-r from-purple-500 to-sky-500 animate-spin"></div>
 
-        <div className="max-w-4xl mx-auto bg-[url('/bgContact3.png')] bg-center bg-cover bg-no-repeat backdrop-blur-md rounded-xl shadow-2xl shadow-gray-800 overflow-hidden flex flex-col md:flex-row">
+        <div className="max-w-4xl mx-auto bg-[url('/bgContact3.png')] bg-center bg-cover bg-no-repeat backdrop-blur-md rounded-xl shadow-xl shadow-white/2 overflow-hidden flex flex-col md:flex-row">
           {/* Left Side - Contact Form */}
           <ContactForm />
 
@@ -39,34 +33,6 @@ export default function Contact() {
 }
 
 function ContactLinks() {
-  const linksData = [
-    {
-      name: "Facebook",
-      url: "https://facebook.com/sahedulislamFB",
-      icon: <IconFacebook className="size-7" />,
-    },
-    {
-      name: "Twitter",
-      url: "https://x.com/i_am_sahed",
-      icon: <IconX className="size-7" />,
-    },
-    {
-      name: "Instagram",
-      url: "https://instagram.com/i.am.sahed",
-      icon: <IconInsta className="size-7" />,
-    },
-    {
-      name: "LinkedIn",
-      url: "https://linkedin.com/in/sahedulislamrony",
-      icon: <IconLinkedIn className="size-7" />,
-    },
-    {
-      name: "GitHub",
-      url: "https://github.com/sahedulislamrony",
-      icon: <IconGithub className="size-7 text-white" />,
-    },
-  ];
-
   return (
     <div className="w-full md:w-1/2 bg-trasparent p-8 flex flex-col justify-center items-center space-y-8">
       {/* Top Heading */}
@@ -79,7 +45,7 @@ function ContactLinks() {
 
       {/* Social Media Icons */}
       <div className="flex space-x-6">
-        {linksData.map((link, index) => (
+        {socialData.map((link, index) => (
           <a
             key={index}
             href={link.url}
