@@ -31,7 +31,7 @@ export default function HeroSection() {
       id="home"
       className={cn(
         // Base design
-        "relative w-full overflow-hidden  container h-fit flex justify-center items-center bg-transparent font-extrabold  pt-[5rem] ",
+        "relative w-full overflow-hidden space-v  h-fit flex justify-center items-center bg-transparent font-extrabold  pt-[5rem] ",
         // Responsive design
         "flex-col md:flex-row"
       )}
@@ -65,7 +65,7 @@ export default function HeroSection() {
 
 function LeftSec() {
   return (
-    <div className="flex-1  flex flex-col justify-start items-start  py-12 px-2 pt-7  z-20 ">
+    <div className="flex-1  flex flex-col justify-start items-start  py-12 pr-2 pl-0 pt-7  z-20 ">
       <h1 className="text-4xl text-gray-100  font-logo font-[900] ">
         Hi , I&apos;m
         <span className="block mt-1.5 text-4xl text-transparent bg-clip-text bg-gradient-to-r  from-white  to-sky-500">

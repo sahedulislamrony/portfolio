@@ -1,5 +1,5 @@
-import skillCategories from "./SkillsData";
-import type { SkillCategory } from "./SkillsData";
+import skillCategories from "../../data/SkillsData";
+import type { SkillCategory } from "../../data/SkillsData";
 import { cn } from "@/lib/utils"; // Assuming you have a cn utility function
 
 export default function Skills() {

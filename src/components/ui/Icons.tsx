@@ -13,7 +13,6 @@ import {
   FaPython,
   FaReact,
   FaRegCopyright,
-  FaRocketchat,
   FaSass,
   FaTools,
 } from "react-icons/fa";
@@ -33,18 +32,21 @@ import {
   RiNextjsLine,
   RiNotionFill,
   RiReactjsLine,
+  RiSparklingLine,
   RiTailwindCssFill,
 } from "react-icons/ri";
 import { CiServer } from "react-icons/ci";
 import { AiOutlineApi } from "react-icons/ai";
 import { GrMysql } from "react-icons/gr";
-import { IoLogoFirebase } from "react-icons/io5";
+import { IoDiamondOutline, IoLogoFirebase } from "react-icons/io5";
 import { PiBrainBold } from "react-icons/pi";
-import { MdOutlineDoubleArrow } from "react-icons/md";
+import { MdOutlineDoubleArrow, MdOutlineMenu } from "react-icons/md";
 import { HiMiniRocketLaunch } from "react-icons/hi2";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
-import { FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
+import { FaGraduationCap, FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
+import { BsChatLeftQuote } from "react-icons/bs";
+import { TfiDownload } from "react-icons/tfi";
 import { cn } from "@/lib/utils";
 
 // Define a type for icon props
@@ -119,7 +121,7 @@ export const IconListArrow = withDefaultProps(
   MdOutlineDoubleArrow,
   "text-purple-400"
 );
-export const IconPhone = withDefaultProps(FaRocketchat, "text-white");
+export const IconPhone = withDefaultProps(BsChatLeftQuote, "text-white");
 export const IconRocket = withDefaultProps(HiMiniRocketLaunch, "text-white");
 
 export const IconFacebook = withDefaultProps(FaFacebookF, "text-white");
@@ -128,3 +130,17 @@ export const IconInsta = withDefaultProps(GrInstagram, "text-white");
 export const IconX = withDefaultProps(FaXTwitter, "text-white");
 export const IconX2 = withDefaultProps(FaSquareXTwitter, "text-white");
 export const IconCopyright = withDefaultProps(FaRegCopyright, "text-white");
+export const IconMenu = withDefaultProps(MdOutlineMenu, "text-white");
+
+// Implementing the missing icons
+import { FaInfoCircle, FaEnvelope, FaHome } from "react-icons/fa";
+import { CgClose } from "react-icons/cg";
+
+export const IconAbout = withDefaultProps(FaInfoCircle, "text-blue-400");
+export const IconClose = withDefaultProps(CgClose, "text-red-400");
+export const IconContact = withDefaultProps(FaEnvelope, "text-green-400");
+export const IconHome = withDefaultProps(FaHome, "text-yellow-400");
+export const IconEducation = withDefaultProps(FaGraduationCap, "text-white");
+export const IconSkills = withDefaultProps(IoDiamondOutline, "text-white");
+export const IconProjects = withDefaultProps(RiSparklingLine, "text-white");
+export const IconDownload = withDefaultProps(TfiDownload, "text-white");

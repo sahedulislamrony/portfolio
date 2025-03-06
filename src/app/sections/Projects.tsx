@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import projects from "./ProjectData";
-import type { Project as ProjectType } from "./ProjectData";
+import projects from "../../data/ProjectData";
+import type { Project as ProjectType } from "../../data/ProjectData";
 import {
   IconExternalLink,
   IconGithub,

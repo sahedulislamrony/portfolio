@@ -1,29 +1,42 @@
 "use client";
 
-import { SparklesText } from "@/components/magicui/sparkles-text";
+import { useState } from "react";
+import { SparklesText } from "@/components/ui/sparkles-text";
 import { cn } from "@/lib/utils";
-
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { IconPhone, IconRocket } from "@/components/ui/Icons";
+import { IconPhone, IconRocket, IconMenu } from "@/components/ui/Icons";
+import SideBar from "@/components/SideBar";
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 bg-white/5 dark:bg-black/5 backdrop-blur-lg z-50 container">
-        {/* main nav  */}
-        <div className="flex justify-between items-center p-4 bg-transparent relative spaceX">
-          {/* Left - Logo */}
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 right-0   backdrop-blur-lg z-50  w-full space-v">
+        {/* Main Nav */}
+        <div className="flex justify-between items-center py-4 px-0 bg-transparent relative ">
           <LeftSec />
 
-          {/* Center - Menu */}
           <CenterSec />
 
-          {/* Right - Buttons & Theme Toggle */}
           <RightSec />
-        </div>
 
-        {/* Gradient Line */}
+          {/* Mobile Menu */}
+          <div className="xl:hidden flex justify-end items-center flex-1">
+            <button
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              className="p-2 rounded-md text-gray-100 hover:bg-gray-900/30 "
+            >
+              <IconMenu size={30} />
+            </button>
+          </div>
+        </div>
+        <SideBar
+          isVisible={isMobileMenuOpen}
+          changeVisibility={setIsMobileMenuOpen}
+        />
+
         <GradientLine />
       </div>
     </>
@@ -32,15 +45,15 @@ export default function Navbar() {
 
 function LeftSec() {
   return (
-    <div className="flex items-center  flex-1">
-      <Link href="/" className="flex items-center">
+    <div className="flex items-center flex-1">
+      <Link href="/" className="flex items-start ">
         <SparklesText
           text="Sahedul"
-          className="text-3xl  text-white cursor-pointer select-none font-logo  font-[400]"
+          className="text-3xl text-white cursor-pointer select-none font-logo font-[400]"
           sparklesCount={5}
           colors={["#0ea5e9", "#fff", "#0ea5e9", "#00ccff"]}
         />
-        <span className="text-3xl text-sky-500 cursor-pointer select-none font-logo  font-[400]">
+        <span className="text-3xl text-sky-500 cursor-pointer select-none font-logo font-[400]">
           .
         </span>
       </Link>
@@ -52,9 +65,10 @@ function CenterSec() {
   return (
     <div
       className={cn(
-        // base design
-        "flex space-x-10 text-gray-300   flex-2 items-center justify-center "
-        // responsive design
+        // Base design
+        "hidden space-x-10 text-gray-300 flex-2 items-center justify-center",
+        // Responsive design
+        "xl:flex xl:space-x-10"
       )}
     >
       <NavItem href="#home" text="Home" />
@@ -79,7 +93,7 @@ function NavItem({
     <a
       href={href}
       className={cn(
-        "hover:text-sky-400 text-lg font-mono font-[700]",
+        "hover:text-sky-400  text-lg  font-poppins font-[700] text-gray-100",
         className
       )}
     >
@@ -90,17 +104,16 @@ function NavItem({
 
 function RightSec() {
   return (
-    <div className="flex items-center justify-end space-x-4  flex-1">
+    <div className="hidden xl:flex items-center justify-end space-x-4 flex-1 font-poppins">
       <a href="#contact">
         <Button
           variant="outline"
-          className="group text-white bg-transparent hover:bg-white/9 hover:text-sky-400 font-[600] border-sky-800"
+          className="group text-white bg-gray-900/30 hover:bg-white/9 hover:text-sky-400 font-[600] border-sky-800"
         >
-          <IconPhone className="font-[800] group-hover:text-sky-400" /> Contact
-          Me
+          <IconPhone className="mr-0.5 group-hover:text-sky-400" /> Contact
         </Button>
       </a>
-      <Button className="bg-gradient-to-r from-sky-700 to-indigo-500 text-gray-100 font-[800]">
+      <Button className="bg-gradient-to-r from-sky-700 to-indigo-500 text-gray-100 font-[600]">
         <IconRocket /> Hire Me
       </Button>
     </div>

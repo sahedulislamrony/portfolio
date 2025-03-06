@@ -1,7 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import React from "react";
-import type { AcademicProps } from "./EducationData";
-import achievements from "./EducationData";
+import type { AcademicProps } from "../../data/EducationData";
+import achievements from "../../data/EducationData";
 
 // Define TypeScript types
 
