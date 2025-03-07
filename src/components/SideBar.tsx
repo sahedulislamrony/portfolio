@@ -80,7 +80,7 @@ export default function SideBar({
               </div>
 
               {/* Navigation */}
-              <div className="w-full h-fit overflow-scroll scrollbar-hide">
+              <div className="w-full h-fit overflow-hidden">
                 <div className="py-5 border-b-[1px] border-sky-500">
                   <div className="w-full h-fit px-6 flex flex-col gap-3">
                     <NavItem href="#home" text="Home" icon={<IconHome />} />
