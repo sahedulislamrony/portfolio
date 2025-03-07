@@ -17,7 +17,7 @@ import {
   FaTools,
 } from "react-icons/fa";
 import { HiExternalLink } from "react-icons/hi";
-import { IoLogoJavascript } from "react-icons/io";
+import { IoIosArrowForward, IoLogoJavascript } from "react-icons/io";
 import {
   SiExpress,
   SiLetsencrypt,
@@ -39,14 +39,13 @@ import { CiServer } from "react-icons/ci";
 import { AiOutlineApi } from "react-icons/ai";
 import { GrMysql } from "react-icons/gr";
 import { IoDiamondOutline, IoLogoFirebase } from "react-icons/io5";
-import { PiBrainBold } from "react-icons/pi";
+import { PiBrainBold, PiDownloadSimpleBold } from "react-icons/pi";
 import { MdOutlineDoubleArrow, MdOutlineMenu } from "react-icons/md";
-import { HiMiniRocketLaunch } from "react-icons/hi2";
+import { HiMiniRocketLaunch, HiSparkles } from "react-icons/hi2";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { FaGraduationCap, FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
 import { BsChatLeftQuote } from "react-icons/bs";
-import { TfiDownload } from "react-icons/tfi";
 import { cn } from "@/lib/utils";
 
 // Define a type for icon props
@@ -143,4 +142,13 @@ export const IconHome = withDefaultProps(FaHome, "text-yellow-400");
 export const IconEducation = withDefaultProps(FaGraduationCap, "text-white");
 export const IconSkills = withDefaultProps(IoDiamondOutline, "text-white");
 export const IconProjects = withDefaultProps(RiSparklingLine, "text-white");
-export const IconDownload = withDefaultProps(TfiDownload, "text-white");
+export const IconDownload = withDefaultProps(
+  PiDownloadSimpleBold,
+  "text-white  size-5"
+);
+
+export const IconSparkles = withDefaultProps(HiSparkles, "text-white");
+export const IconArrowR = withDefaultProps(
+  IoIosArrowForward,
+  "text-sky-500 size-5"
+);

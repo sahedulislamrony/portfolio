@@ -110,10 +110,10 @@ function RightSec() {
           variant="outline"
           className="group text-white bg-gray-900/30 hover:bg-white/9 hover:text-sky-400 font-[600] border-sky-800"
         >
-          <IconPhone className="mr-0.5 group-hover:text-sky-400" /> Contact
+          <IconPhone className="mr-0.5 group-hover:text-sky-400" /> Contact Me
         </Button>
       </a>
-      <Button className="bg-gradient-to-r from-sky-700 to-indigo-500 text-gray-100 font-[600]">
+      <Button className="bg-gradient-to-r from-sky-700 to-sky-500 text-gray-100 font-[600]">
         <IconRocket /> Hire Me
       </Button>
     </div>

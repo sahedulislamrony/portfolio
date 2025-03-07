@@ -20,11 +20,17 @@ module.exports = {
       },
       animation: {
         float: "float 6s infinite ease-in-out",
+        gradient: "gradient 8s linear infinite",
       },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-20px)" },
+        },
+        gradient: {
+          to: {
+            backgroundPosition: "var(--bg-size) 0",
+          },
         },
       },
     },

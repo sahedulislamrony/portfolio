@@ -258,7 +258,7 @@ const Particles: React.FC<ParticlesProps> = ({
   );
 };
 
-const useParticalAnimation = () => {
+const useParticleAnimation = () => {
   const animation = {
     start: () => {
       animationFrameId = requestAnimationFrame(update);
@@ -271,4 +271,4 @@ const useParticalAnimation = () => {
 };
 
 export default Particles;
-export { useParticalAnimation };
+export { useParticleAnimation };
