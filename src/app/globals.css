@@ -147,6 +147,8 @@
   .absolute-center {
     @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
   }
+
+  /* for vertical spacing for all sections */
   .space-v {
     @apply px-5 md:px-12.5 lg:px-15 xl:px-20;
   }

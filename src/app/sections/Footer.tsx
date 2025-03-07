@@ -3,10 +3,11 @@ import { socialData } from "@/data/SocialData";
 
 export default function Footer() {
   return (
-    <footer className="bg-transparent text-white   border-t border-gray-800 relative">
-      <div className="absolute top-0 left-0 w-full  h-0.5 bg-gradient-to-r from-purple-800 to-pink-600"></div>
+    <footer className="bg-transparent text-white border-t border-gray-800 relative">
+      <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-800 to-pink-600"></div>
 
       <div className="container mx-auto px-4 py-5">
+        {/* Social Media Links */}
         <div className="flex justify-center space-x-5 my-5">
           {socialData.map((item, index) => {
             const { name, url, icon, falBackIcon } = item;
@@ -27,11 +28,24 @@ export default function Footer() {
           })}
         </div>
 
+        {/* Secondary Contact Info */}
+        <div className="text-center text-gray-400 text-sm font-roboto space-y-2 mb-5">
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:cast.sahedul@gmail.com"
+              className="text-gray-300 hover:text-white transition-all duration-300"
+            >
+              cast.sahedul@gmail.com
+            </a>
+          </p>
+        </div>
+
         {/* Copyright Text */}
-        <div className="text-center text-gray-500 text-sm font-roboto  flex items-center justify-center ">
+        <div className="text-center text-gray-500 text-sm font-roboto flex items-center justify-center">
           <IconCopyright className="text-gray-500 mr-1.5" />{" "}
           {new Date().getFullYear()}{" "}
-          <span className="ml-1 font-[700] bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-pink-900 ">
+          <span className="ml-1 font-[700] bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-pink-900">
             Sahedul Islam Rony
           </span>
           . All rights reserved.

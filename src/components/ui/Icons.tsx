@@ -20,6 +20,7 @@ import { HiExternalLink } from "react-icons/hi";
 import { IoIosArrowForward, IoLogoJavascript } from "react-icons/io";
 import {
   SiExpress,
+  SiGmail,
   SiLetsencrypt,
   SiMongodb,
   SiPostman,
@@ -154,3 +155,4 @@ export const IconBookOpen = withDefaultProps(BookOpen, "text-blue-400");
 export const IconPalette = withDefaultProps(Palette, "text-purple-400");
 export const IconPuzzle = withDefaultProps(Puzzle, "text-blue-400");
 export const IconShield = withDefaultProps(Shield, "text-green-400");
+export const IconEmail = withDefaultProps(SiGmail, "text-white");

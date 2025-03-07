@@ -8,6 +8,8 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { IconDownload, IconSparkles } from "@/components/ui/Icons";
 import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
+import useScroll from "@/hooks/useScroll";
+import { useDownloadResume } from "@/hooks/useDownload";
 
 type AnimationInstance = {
   start: () => void;
@@ -60,6 +62,8 @@ export default function HeroSection() {
 }
 
 function LeftSec() {
+  const scroll = useScroll("projects");
+  const download = useDownloadResume();
   return (
     <div className="flex-1 flex flex-col justify-start items-start py-12 px-4 md:pr-2 md:pl-0 pt-7 z-20">
       <h1 className="text-3xl md:text-4xl text-gray-100 font-poppins font-[900]">
@@ -71,7 +75,7 @@ function LeftSec() {
       <p className="text-sky-500 py-6 text-3xl md:leading-10 lg:leading-15 md:text-4xl lg:text-6xl font-poppins font-[900]">
         Full Stack Developer & Security Enthusiast
       </p>
-      <p className="font-roboto font-[400] text-base md:text-lg text-gray-300 mb-0 z-20 leading-relaxed">
+      <p className="font-roboto font-[500] text-base md:text-lg text-gray-400 mb-0 z-20 leading-relaxed">
         I am passionate about building scalable, high-performance web
         applications using clean code and modern technologies. I turn ideas into
         reality with precision and efficiency{" "}
@@ -83,6 +87,8 @@ function LeftSec() {
         <Button
           variant="outline"
           className="group py-6 text-white bg-sky-700 hover:bg-white/9 hover:text-sky-400 border-sky-800"
+          onClick={scroll}
+          aria-label="Explore My Work"
         >
           <AnimatedGradientText
             className="flex items-center justify-center"
@@ -101,6 +107,7 @@ function LeftSec() {
           variant="outline"
           className="group py-6 text-[16px] text-white bg-gray-900/30 hover:bg-white/9 hover:text-sky-400 font-[600] border-gray-800"
           aria-label="Download CV"
+          onClick={download}
         >
           Download CV
           <IconDownload className="mr-0.5 group-hover:text-sky-400 size-5.5" />

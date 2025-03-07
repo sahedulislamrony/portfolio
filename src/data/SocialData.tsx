@@ -1,7 +1,7 @@
 import {
+  IconEmail,
   IconFacebook,
   IconGithub,
-  IconInsta,
   IconLinkedIn,
   IconX,
 } from "@/components/ui/Icons";
@@ -26,9 +26,9 @@ const socialData: Links[] = [
     falBackIcon: <IconX className="size-6 hover:text-gray-500" />,
   },
   {
-    name: "Instagram",
-    url: "https://instagram.com/i.am.sahed",
-    icon: <IconInsta className="size-6 hover:text-rose-700" />,
+    name: "Email",
+    url: "mailto:cast.sahedul@gmail.com?subject=Contact%20from%20Portfolio",
+    icon: <IconEmail className="size-6 hover:text-rose-700" />,
   },
   {
     name: "LinkedIn",

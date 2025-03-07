@@ -8,10 +8,12 @@ import {
   IconPuzzle,
   IconShield,
 } from "@/components/ui/Icons";
+import { useDownloadResume } from "@/hooks/useDownload";
 
 import Image from "next/image";
 
 export default function AboutSection() {
+  const download = useDownloadResume();
   return (
     <section id="about" className="py-20 bg-transparent space-v">
       <div className="mx-auto px-4">
@@ -95,7 +97,10 @@ export default function AboutSection() {
               />
             </div>
             {/* Call-to-Action Button */}
-            <button className="text-black font-[700] flex gap-2 items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-2 md:px-8 md:py-3 rounded-sm w-fit">
+            <button
+              onClick={download}
+              className="text-black font-[700] flex gap-2 items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-2 md:px-8 md:py-3 rounded-sm w-fit"
+            >
               <IconDownload className="w-5 h-5 text-black" />
               <AnimatedGradientText
                 colorFrom="#000"
