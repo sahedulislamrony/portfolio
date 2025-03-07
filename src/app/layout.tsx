@@ -21,9 +21,60 @@ const poppins = Poppins({
   style: ["normal", "italic"],
   subsets: ["latin"],
 });
+
 export const metadata: Metadata = {
-  title: "Sahedul Islam Rony",
-  description: "Personal website of Sahedul Islam Rony",
+  title: "Sahedul Islam Rony | Full-Stack Web Developer",
+  description:
+    "Hi, I'm Sahedul Islam Rony (Sahed), a passionate full-stack web developer specializing in Next.js, React, Tailwind CSS, and Firebase. Explore my projects, technical blogs, and open-source contributions.",
+  manifest: "/manifest",
+  themeColor: "#000",
+  keywords: [
+    "Sahedul Islam Rony",
+    "Sahed",
+    "Rony",
+    "Full-Stack Developer",
+    "Web Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Tailwind CSS",
+    "Firebase",
+    "JavaScript",
+    "TypeScript",
+    "Frontend Engineer",
+    "Open Source",
+    "Portfolio",
+    "CSE Student",
+    "Jashore University of Science and Technology",
+  ],
+  authors: [{ name: "Sahedul Islam Rony", url: "https://sahedul.me" }],
+  creator: "Sahedul Islam Rony",
+  openGraph: {
+    title: "Sahedul Islam Rony | Full-Stack Web Developer",
+    description:
+      "I am Sahedul Islam Rony (Sahed), a CSE undergraduate at Jashore University of Science and Technology. Passionate about React, Next.js, and web development. Check out my portfolio for projects and insights.",
+    url: "https://sahedul.me",
+    siteName: "Sahedul Islam Rony",
+    images: [
+      {
+        url: "https://sahedul.me/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sahedul Islam Rony | Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@i_am_sahed",
+    creator: "@i_am_sahed",
+    title: "Sahedul Islam Rony | Full-Stack Web Developer",
+    description:
+      "Explore my portfolio showcasing expertise in React, Next.js, Firebase, and full-stack web development.",
+    images: ["https://sahedul.me/og-image.jpg"],
+  },
+  robots: "index, follow",
 };
 
 export default function RootLayout({
@@ -32,7 +83,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={` ${Black_Ops.variable} ${roboto.variable} ${poppins.variable} antialiased flex flex-col  items-center bg-gray-500`}
+        className={` ${Black_Ops.variable} ${roboto.variable} ${poppins.variable} antialiased flex flex-col  items-center bg-black`}
         suppressHydrationWarning
       >
         <Toaster richColors />
