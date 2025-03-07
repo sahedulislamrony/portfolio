@@ -93,7 +93,7 @@ function LeftSec() {
           <AnimatedGradientText
             className="flex items-center justify-center"
             colorFrom="#000"
-            colorTo="#fff"
+            colorTo="#334155"
           >
             <span className="font-poppins font-[800] text-[16px] text-inherit">
               Explore My Work

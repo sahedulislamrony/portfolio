@@ -29,12 +29,12 @@ export default function Footer() {
         </div>
 
         {/* Secondary Contact Info */}
-        <div className="text-center text-gray-400 text-sm font-roboto space-y-2 mb-5">
+        <div className="text-center text-gray-400 text-sm font-roboto  space-y-2 mb-5">
           <p>
             Email:{" "}
             <a
               href="mailto:cast.sahedul@gmail.com"
-              className="text-gray-300 hover:text-white transition-all duration-300"
+              className="text-gray-500 hover:text-white transition-all duration-300 font-[500]"
             >
               cast.sahedul@gmail.com
             </a>

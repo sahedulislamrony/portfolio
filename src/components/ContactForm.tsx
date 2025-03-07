@@ -102,7 +102,7 @@ const ContactForm = () => {
         <button
           type="submit"
           className={cn(
-            "w-full bg-blue-500 font-[600] text-black py-2 px-4 rounded-md hover:from-purple-600 hover:to-sky-600 focus:outline-none  transition-all duration-200 flex justify-center items-center space-x-2",
+            "w-full bg-blue-500 font-roboto font-[600] text-black py-2 px-4 rounded-md hover:from-purple-600 hover:to-sky-600 focus:outline-none  transition-all duration-200 flex justify-center items-center space-x-2",
             {
               "disabled:opacity-50  cursor-not-allowed ":
                 formState === "LOADING",

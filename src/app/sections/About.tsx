@@ -104,7 +104,7 @@ export default function AboutSection() {
               <IconDownload className="w-5 h-5 text-black" />
               <AnimatedGradientText
                 colorFrom="#000"
-                colorTo="#334155"
+                colorTo="#1e293b"
                 speed={1.5}
               >
                 Download CV
