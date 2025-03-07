@@ -3,34 +3,34 @@ import React from "react";
 import type { AcademicProps } from "../../data/EducationData";
 import achievements from "../../data/EducationData";
 
-// Define TypeScript types
-
 export default function Education() {
   return (
     <section
       id="education"
-      className="py-20  bg-transparent container overflow-hidden"
+      className="py-20 bg-transparent space-v  overflow-hidden"
     >
-      <div className=" mx-auto px-4 relative">
+      <div className="mx-auto px-4 relative">
         {/* Section Title */}
-        <div className="text-center mb-16 font-logo font-[400]">
-          <h2 className="text-6xl font-bold text-white mb-4">Education</h2>
+        <div className="text-center mb-16 font-poppins font-[900]">
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
+            Education
+          </h2>
         </div>
 
         {/* Animated Gradient Background */}
-        <div className="absolute top-20 left-0 h-96 w-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 animate-spin"></div>
-        <div className="absolute bottom-20 right-0 h-96 w-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 animate-spin"></div>
+        <div className="absolute top-20 left-0 h-48 w-48 md:h-96 md:w-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 animate-spin"></div>
+        <div className="absolute bottom-20 right-0 h-48 w-48 md:h-96 md:w-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 animate-spin"></div>
 
         {/* Education Timeline */}
-        <div className="relative">
+        <div className="relative ">
           {/* Timeline Line */}
-          <div className="absolute left-1/2 w-1 h-full bg-gradient-to-b from-gray-300 to-sky-500  transform -translate-x-1/2"></div>
+          <div className="hidden sm:block absolute left-1/2 w-1 h-full bg-gradient-to-b from-gray-300 to-sky-500 transform -translate-x-1/2"></div>
 
           {/* Top Circle */}
-          <div className="absolute left-1/2 w-6 h-6 bg-gray-300 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="hidden sm:block absolute left-1/2 w-6 h-6 bg-gray-300 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
 
           {/* Timeline Items */}
-          <div className="space-y-8">
+          <div className="space-y-8 flex justify-center items-center flex-col">
             {achievements.map((achievement, index) => (
               <Academic
                 key={index}
@@ -62,16 +62,20 @@ function Academic({
 }: AcademicProps) {
   return (
     <div
-      className={`flex items-center w-full ${
-        isOdd ? "flex-row-reverse" : "flex-row"
+      className={`flex items-center w-[80%]  border-sky-500 pb-5 sm:pb-0 border-b-2 sm:border-0 hover:border-purple-500 sm:w-full  justify-center ${
+        isOdd ? "sm:flex-row-reverse flex-row" : "flex-row"
       }`}
     >
       {/* Left Side */}
-      <div className={`w-1/2 ${isOdd ? "pl-8 text-left" : "pr-8 text-right"}`}>
+      <div
+        className={`w-full sm:w-1/2 ${
+          isOdd ? "sm:pl-8 sm:text-left" : "sm:pr-8 sm:text-right text-left"
+        }`}
+      >
         <h3 className="text-2xl font-bold  text-purple-400">{title}</h3>
         <div
           className={`flex items-center space-x-2 mt-2 ${
-            isOdd ? "justify-start" : "justify-end"
+            isOdd ? "justify-start  " : "sm:justify-end"
           }`}
         >
           <span className="text-gray-400 text-sm font-mono bg-gray-800 px-3 py-1 rounded-full border border-gray-700">
@@ -83,15 +87,15 @@ function Academic({
           </span>
         </div>
         {/* Description */}
-        <div className={`${isOdd ? "text-left" : "text-right"}`}>
-          <p className="text-gray-200 text-sm mt-2 max-w-xl inline-block font-noto font-[500]">
+        <div className={`${isOdd ? "text-left " : "sm:text-right text-left"}`}>
+          <p className="text-gray-200 text-sm mt-2 max-w-xl inline-block font-roboto font-[500]">
             {description}
           </p>
         </div>
         {/* Tag */}
         <div
           className={`flex gap-2 flex-wrap ${
-            isOdd ? "justify-start" : "justify-end"
+            isOdd ? "sm:justify-start" : "sm:justify-end"
           } mt-4`}
         >
           {tags.map((tag, index) => (
@@ -117,12 +121,12 @@ function Academic({
       </div>
 
       {/* Icon */}
-      <div className="w-12 h-12 flex items-center justify-center bg-gray-900 rounded-full border-2 border-sky-800 z-10 ">
+      <div className="hidden sm:flex w-12 h-12  items-center justify-center bg-gray-900 rounded-full border-2 border-sky-800 z-10 ">
         {icon}
       </div>
 
       {/* Right Side (Empty for alignment) */}
-      <div className={`w-1/2 ${isOdd ? "pr-8" : "pl-8"}`}></div>
+      <div className={`hidden sm:block w-1/2 ${isOdd ? "pr-8" : "pl-8"}`}></div>
     </div>
   );
 }
