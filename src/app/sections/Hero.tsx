@@ -71,7 +71,7 @@ function LeftSec() {
       <p className="text-sky-500 py-6 text-3xl md:leading-10 lg:leading-15 md:text-4xl lg:text-6xl font-poppins font-[900]">
         Full Stack Developer & Security Enthusiast
       </p>
-      <p className="font-roboto font-[400] text-base md:text-lg text-gray-300 mb-0 z-20">
+      <p className="font-roboto font-[400] text-base md:text-lg text-gray-300 mb-0 z-20 leading-relaxed">
         I am passionate about building scalable, high-performance web
         applications using clean code and modern technologies. I turn ideas into
         reality with precision and efficiency{" "}
@@ -103,7 +103,7 @@ function LeftSec() {
           aria-label="Download CV"
         >
           Download CV
-          <IconDownload className="mr-0.5 group-hover:text-sky-400 size-6" />
+          <IconDownload className="mr-0.5 group-hover:text-sky-400 size-5.5" />
         </Button>
       </div>
     </div>

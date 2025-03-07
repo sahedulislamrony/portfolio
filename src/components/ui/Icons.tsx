@@ -35,11 +35,12 @@ import {
   RiSparklingLine,
   RiTailwindCssFill,
 } from "react-icons/ri";
+import { BookOpen, Download, Palette, Puzzle, Shield } from "lucide-react";
 import { CiServer } from "react-icons/ci";
 import { AiOutlineApi } from "react-icons/ai";
 import { GrMysql } from "react-icons/gr";
 import { IoDiamondOutline, IoLogoFirebase } from "react-icons/io5";
-import { PiBrainBold, PiDownloadSimpleBold } from "react-icons/pi";
+import { PiBrainBold } from "react-icons/pi";
 import { MdOutlineDoubleArrow, MdOutlineMenu } from "react-icons/md";
 import { HiMiniRocketLaunch, HiSparkles } from "react-icons/hi2";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
@@ -142,13 +143,14 @@ export const IconHome = withDefaultProps(FaHome, "text-yellow-400");
 export const IconEducation = withDefaultProps(FaGraduationCap, "text-white");
 export const IconSkills = withDefaultProps(IoDiamondOutline, "text-white");
 export const IconProjects = withDefaultProps(RiSparklingLine, "text-white");
-export const IconDownload = withDefaultProps(
-  PiDownloadSimpleBold,
-  "text-white  size-5"
-);
+export const IconDownload = withDefaultProps(Download, "text-white  size-5");
 
 export const IconSparkles = withDefaultProps(HiSparkles, "text-white");
 export const IconArrowR = withDefaultProps(
   IoIosArrowForward,
   "text-sky-500 size-5"
 );
+export const IconBookOpen = withDefaultProps(BookOpen, "text-blue-400");
+export const IconPalette = withDefaultProps(Palette, "text-purple-400");
+export const IconPuzzle = withDefaultProps(Puzzle, "text-blue-400");
+export const IconShield = withDefaultProps(Shield, "text-green-400");
