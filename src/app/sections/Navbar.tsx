@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 right-0   backdrop-blur-lg z-50  w-full space-v">
+      <nav className="fixed top-0 left-1/2 -translate-x-1/2 right-0   backdrop-blur-lg z-50  w-full max-w-[1536] space-v">
         {/* Main Nav */}
         <div className="flex justify-between items-center py-4 px-0 bg-transparent relative ">
           <LeftSec />
@@ -38,7 +38,7 @@ export default function Navbar() {
         />
 
         <GradientLine />
-      </div>
+      </nav>
     </>
   );
 }
