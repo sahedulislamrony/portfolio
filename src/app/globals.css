@@ -153,3 +153,27 @@
     @apply px-5 md:px-12.5 lg:px-15 xl:px-20;
   }
 }
+
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1f25; /* Dark background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b1f25; /* Dark gray thumb */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1b1f25; /* Lighter on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1b1f25 #0c0b0b;
+}

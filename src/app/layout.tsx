@@ -85,7 +85,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={` ${Black_Ops.variable} ${roboto.variable} ${poppins.variable} antialiased flex flex-col  items-center bg-black`}
+        className={` ${Black_Ops.variable} ${roboto.variable} ${poppins.variable} antialiased flex flex-col  items-center bg-black dark-scrollbar`}
         suppressHydrationWarning
       >
         <Toaster richColors />

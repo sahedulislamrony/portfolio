@@ -44,10 +44,10 @@ export default function SideBar({
           onClick={handleClose}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          exit={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="w-full h-screen flex justify-end items-center">
+          <div className="w-full h-screen flex justify-end items-center ">
             {/* Sidebar Content */}
             <motion.div
               className="w-[21.5rem] h-screen overflow-auto bg-black rounded-s-lg"
@@ -80,7 +80,7 @@ export default function SideBar({
               </div>
 
               {/* Navigation */}
-              <div className="w-full h-fit overflow-scroll">
+              <div className="w-full h-fit overflow-scroll scrollbar-hide">
                 <div className="py-5 border-b-[1px] border-sky-500">
                   <div className="w-full h-fit px-6 flex flex-col gap-3">
                     <NavItem href="#home" text="Home" icon={<IconHome />} />
