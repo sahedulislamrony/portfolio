@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Toaster } from "sonner";
 import { Black_Ops_One, Roboto, Poppins } from "next/font/google";
 import "./globals.css";
@@ -21,13 +21,15 @@ const poppins = Poppins({
   style: ["normal", "italic"],
   subsets: ["latin"],
 });
+export const viewport: Viewport = {
+  themeColor: "black",
+};
 
 export const metadata: Metadata = {
   title: "Sahedul Islam Rony | Full-Stack Web Developer",
   description:
     "Hi, I'm Sahedul Islam Rony (Sahed), a passionate full-stack web developer specializing in Next.js, React, Tailwind CSS, and Firebase. Explore my projects, technical blogs, and open-source contributions.",
   manifest: "/manifest",
-  themeColor: "#000",
   keywords: [
     "Sahedul Islam Rony",
     "Sahed",
