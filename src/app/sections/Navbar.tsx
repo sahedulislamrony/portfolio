@@ -15,7 +15,7 @@ export default function Navbar() {
     <>
       <nav className="fixed top-0 left-1/2 -translate-x-1/2 right-0   backdrop-blur-lg z-50  w-full max-w-[1536] space-v">
         {/* Main Nav */}
-        <div className="flex justify-between items-center py-4 px-0 bg-transparent relative ">
+        <div className="flex justify-between items-center py-1.5 xl:py-4 px-0 bg-transparent relative ">
           <LeftSec />
 
           <CenterSec />
@@ -23,12 +23,12 @@ export default function Navbar() {
           <RightSec />
 
           {/* Mobile Menu */}
-          <div className="xl:hidden flex justify-end items-center flex-1">
+          <div className="xl:hidden flex justify-end items-center flex-1 ">
             <button
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-              className="p-2 rounded-md text-gray-100 hover:bg-gray-900/30 "
+              className=" group p-2 rounded-full text-gray-100 hover:bg-white/10  "
             >
-              <IconMenu size={30} />
+              <IconMenu size={30} className="group-hover:text-sky-400" />
             </button>
           </div>
         </div>
@@ -113,7 +113,12 @@ function RightSec() {
           <IconPhone className="mr-0.5 group-hover:text-sky-400" /> Contact Me
         </Button>
       </a>
-      <Button className="bg-gradient-to-r from-sky-700 to-sky-500 text-gray-100 font-[600]">
+      <Button
+        className="bg-gradient-to-r from-sky-700 to-sky-500 text-gray-100 font-[600]"
+        onClick={() =>
+          window.open("https://www.linkedin.com/in/sahedulislamrony/", "_blank")
+        }
+      >
         <IconRocket /> Hire Me
       </Button>
     </div>

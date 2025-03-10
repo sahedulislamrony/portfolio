@@ -32,8 +32,10 @@ export default function SideBar({
     }
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleSidebarClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
+    // e.stopPropagation();
+    // need to fix this
   };
 
   return (

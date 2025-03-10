@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">🚀 Portfolio 🚀</h1>
 
-## Getting Started
+**A modern and sleek portfolio website built with cutting-edge web technologies, designed to showcase my projects, skills, and experience.**
 
-First, run the development server:
+<div align="center" >
+    <img src="./demo/1.png" width="1200">
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack & Tools
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div align="left">
+<img src="https://skillicons.dev/icons?i=nextjs" height="30" alt="Next.js logo" />
+<img width="12" />
+<img src="https://skillicons.dev/icons?i=ts" height="30" alt="TypeScript logo" />
+<img width="12" />
+<img src="https://skillicons.dev/icons?i=tailwind" height="30" alt="Tailwind CSS logo" />
+<img width="12" />
+<img src="https://skillicons.dev/icons?i=shadcn" height="30" alt="shadcn/ui logo" />
+<img width="12" />
+<img src="https://skillicons.dev/icons?i=vercel" height="30" alt="Vercel logo" />
+<img width="12" />
+<img src="https://skillicons.dev/icons?i=git" height="30" alt="Git logo" />
+<img width="12" />
+<img src="https://skillicons.dev/icons?i=github" height="30" alt="GitHub logo" />
+<img width="12" />
+<img src="https://skillicons.dev/icons?i=vscode" height="30" alt="VS Code logo" />
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔥 Features:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js** – A React framework for building optimized and server-rendered applications.
+- **TypeScript** – A statically typed superset of JavaScript for better code maintainability.
+- **Tailwind CSS** – A utility-first CSS framework for building modern and responsive UI.
+- **shadcn/ui** – A collection of beautifully styled UI components for faster development.
+- **Vercel** – A powerful hosting platform for seamless deployment and performance optimization.
+- **Git & GitHub** – Version control and project collaboration tools.
+- **VS Code** – The preferred editor for efficient development.
 
-## Learn More
+🔗 **Live Preview:** [**Portfolio Website**](https://www.sahedul.me/)
 
-To learn more about Next.js, take a look at the following resources:
+## 🎉 Preview:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img src="./demo/full.png" alt="Portfolio Screenshot" width="1200"/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Sahedul Islam Rony
 
-## Deploy on Vercel
+**`Student/Programmer`**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email:** **cast.sahedul@gmail.com**
+- **LinkedIn:** [**@sahedulislamrony**](https://www.linkedin.com/in/sahedulislamrony/)

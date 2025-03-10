@@ -1,4 +1,3 @@
-import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 import {
   IconBookOpen,
   IconBrain,
@@ -17,7 +16,6 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-transparent space-v">
       <div className="mx-auto px-4">
-        {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-poppins font-[900] text-white mb-4">
             About Me
@@ -26,18 +24,16 @@ export default function AboutSection() {
 
         {/* Content */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-          {/* Left Section - Hidden on mobile, visible on md and larger screens */}
           <div className="hidden md:flex flex-1 relative  justify-center items-center">
-            {/* Animated Gradient Background */}
             <div className="absolute-center w-64 h-64 md:w-96 md:h-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-            {/* Profile Image or Illustration */}
+
             <div className="relative z-10">
               <Image
-                src="/rony2.png"
+                src="/myself.jpeg"
                 alt="About Me"
                 width={400}
                 height={400}
-                className="rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
+                className="rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 ring-2 ring-purple-500"
               />
             </div>
           </div>
@@ -96,19 +92,12 @@ export default function AboutSection() {
                 text="Cyber Security"
               />
             </div>
-            {/* Call-to-Action Button */}
             <button
               onClick={download}
               className="text-black font-[700] flex gap-2 items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-2 md:px-8 md:py-3 rounded-sm w-fit"
             >
               <IconDownload className="w-5 h-5 text-black" />
-              <AnimatedGradientText
-                colorFrom="#000"
-                colorTo="#1e293b"
-                speed={1.5}
-              >
-                Download CV
-              </AnimatedGradientText>
+              Download CV
             </button>
           </div>
         </div>

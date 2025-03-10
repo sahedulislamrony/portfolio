@@ -13,9 +13,12 @@ interface FormData {
 
 export async function POST(request: Request): Promise<Response> {
   try {
-    const { fullName, email, message }: FormData = await request.json();
+    let { fullName, email, message }: FormData = await request.json();
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    fullName = fullName.trim();
+    email = email.trim();
+    message = message.trim();
 
     if (!fullName || !email || !message) {
       return NextResponse.json(

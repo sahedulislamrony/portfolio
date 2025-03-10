@@ -109,7 +109,6 @@ function ProjectCard({
             </ul>
           </div>
 
-          {/* Tech Stack Tags */}
           <div className="flex flex-wrap gap-2 mt-6">
             {techStack.map((tech, idx) => (
               <div
@@ -122,7 +121,6 @@ function ProjectCard({
             ))}
           </div>
 
-          {/* Link Preview and GitHub Button */}
           <div className="flex items-center gap-4 mt-6">
             <a
               href={link}

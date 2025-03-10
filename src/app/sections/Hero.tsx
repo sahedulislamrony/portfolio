@@ -1,13 +1,11 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import Orb, { useOrbAnimation } from "@/components/ui/Orb";
 import Particles, { useParticleAnimation } from "@/components/ui/Particles";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { IconDownload, IconSparkles } from "@/components/ui/Icons";
-import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 import useScroll from "@/hooks/useScroll";
 import { useDownloadResume } from "@/hooks/useDownload";
 
@@ -72,10 +70,10 @@ function LeftSec() {
           Sahedul Islam Rony
         </span>
       </h1>
-      <p className="text-sky-500 py-6 text-3xl md:leading-10 lg:leading-15 md:text-4xl lg:text-6xl font-poppins font-[900]">
+      <p className="text-sky-400 py-6 text-3xl md:leading-10 lg:leading-15 md:text-4xl lg:text-6xl font-poppins font-[900]">
         Full Stack Developer & Security Enthusiast
       </p>
-      <p className="font-roboto font-[500] text-base md:text-lg text-gray-400 mb-0 z-20 leading-relaxed">
+      <p className="font-roboto font-[500] text-base md:text-lg text-gray-300 mb-0 z-20 leading-relaxed">
         I am passionate about building scalable, high-performance web
         applications using clean code and modern technologies. I turn ideas into
         reality with precision and efficiency{" "}
@@ -83,35 +81,22 @@ function LeftSec() {
       </p>
 
       <div className="flex flex-wrap gap-4 mt-10">
-        {/* Call-to-Action Button - Explore My Work */}
-        <Button
-          variant="outline"
-          className="group py-6 text-white bg-sky-700 hover:bg-white/9 hover:text-sky-400 border-sky-800"
+        <button
           onClick={scroll}
+          className=" font-[700] flex gap-2 items-center space-x-2 text-white bg-gray-900/5 hover:bg-white/10 border border-gray-400  px-6 py-2 md:px-8 md:py-3 rounded-md w-fit"
           aria-label="Explore My Work"
         >
-          <AnimatedGradientText
-            className="flex items-center justify-center"
-            colorFrom="#000"
-            colorTo="#334155"
-          >
-            <span className="font-poppins font-[800] text-[16px] text-inherit">
-              Explore My Work
-            </span>
-            <IconSparkles className="ml-2 group-hover:text-sky-400 size-6" />
-          </AnimatedGradientText>
-        </Button>
+          <IconSparkles className="w-5 h-5 text-white" />
+          Explore My Work
+        </button>
 
-        {/* Call-to-Action Button - Download CV */}
-        <Button
-          variant="outline"
-          className="group py-6 text-[16px] text-white bg-gray-900/30 hover:bg-white/9 hover:text-sky-400 font-[600] border-gray-800"
-          aria-label="Download CV"
+        <button
           onClick={download}
+          className="text-black font-[700] flex gap-2 items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-2 md:px-8 md:py-3 rounded-md w-fit"
         >
+          <IconDownload className="w-5 h-5 text-black" />
           Download CV
-          <IconDownload className="mr-0.5 group-hover:text-sky-400 size-5.5" />
-        </Button>
+        </button>
       </div>
     </div>
   );
@@ -140,7 +125,7 @@ function RightSec() {
           alt="Sahedul Islam Rony"
           width={800}
           height={800}
-          className="rounded-full w-full h-full overflow-hidden"
+          className="rounded-full w-full h-full overflow-hidden "
           priority
         />
 

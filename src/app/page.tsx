@@ -12,7 +12,7 @@ import Skills from "./sections/Skills";
 
 export default function Home() {
   return (
-    <div className="max-w-[1536] relative mx-auto bg-main  ">
+    <main className="max-w-[1536] relative mx-auto bg-main  ">
       <Navbar />
       <Hero />
       <About />
@@ -21,6 +21,6 @@ export default function Home() {
       <Projects />
       <GetInTouch />
       <Footer />
-    </div>
+    </main>
   );
 }

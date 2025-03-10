@@ -8,14 +8,12 @@ export default function Contact() {
       className="py-20 pb-20 bg-transparent overflow-hidden relative space-v"
     >
       <div className=" mx-auto px-4 relative">
-        {/* Section Title */}
         <div className="text-center mb-16 font-poppins font-[900]">
           <h2 className="text-4xl md:text-6xl font-bold mb-4 text-white">
             Contact Me
           </h2>
         </div>
 
-        {/* Contact Container */}
         <div className="max-w-4xl mx-auto bg-[url('/bgContact3.png')] bg-center bg-cover bg-no-repeat backdrop-blur-md rounded-xl shadow-xl shadow-gray-600/10 overflow-hidden flex flex-col md:flex-row">
           {/* Left Side - Contact Form */}
           <ContactForm />
@@ -31,15 +29,12 @@ export default function Contact() {
 function ContactLinks() {
   return (
     <div className="w-full md:w-1/2 bg-transparent p-6 md:p-8 flex flex-col justify-center items-center space-y-6 md:space-y-8">
-      {/* Top Heading */}
       <h2 className="text-3xl lg:text-4xl font-roboto font-[900] text-white mb-4 text-center">
         Let&apos;s Connect
       </h2>
 
-      {/* Divider Line */}
       <div className="w-16 h-1 bg-blue-500 rounded-full"></div>
 
-      {/* Social Media Icons */}
       <div className="flex space-x-4 md:space-x-6">
         {socialData.map((link, index) => (
           <a
@@ -54,7 +49,6 @@ function ContactLinks() {
         ))}
       </div>
 
-      {/* Subtle Call-to-Action Text */}
       <p className="text-gray-300 text-sm md:text-base mt-4 font-roboto font-[600] text-center">
         Reach out and let&apos;s create something amazing together.
       </p>

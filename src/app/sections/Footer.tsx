@@ -7,7 +7,6 @@ export default function Footer() {
       <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-800 to-pink-600"></div>
 
       <div className="container mx-auto px-4 py-5">
-        {/* Social Media Links */}
         <div className="flex justify-center space-x-5 my-5">
           {socialData.map((item, index) => {
             const { name, url, icon, falBackIcon } = item;
@@ -41,7 +40,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Copyright Text */}
         <div className="text-center text-gray-500 text-sm font-roboto flex items-center justify-center">
           <IconCopyright className="text-gray-500 mr-1.5" />{" "}
           {new Date().getFullYear()}{" "}

@@ -104,8 +104,8 @@ const projects: Project[] = [
         icon: <IconLock />,
       },
     ],
-    link: "https://ecommerce-rony.netlify.app/",
-    repo: "",
+    link: "https://sahedul.me/",
+    repo: "https://github.com/sahedulislamrony/portfolio",
   },
   {
     title: "Google Keep Clone",
