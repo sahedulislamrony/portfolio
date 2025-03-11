@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly" 
+    open-pull-requests-limit: 5 
+    ignore:
+      - dependency-name: "next"
+        versions: ["^16.0.0"] # Prevents auto-upgrading beyond Next.js 15
+    labels:
+      - "dependencies"
+      - "bot"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
