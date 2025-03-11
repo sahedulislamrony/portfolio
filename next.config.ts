@@ -1,11 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // images: {
-  //   domains: [
-  //     "api.microlink.io",
-  //   ],
-  // },
+  async redirects() {
+    return [
+      {
+        source: "/anonymous",
+        destination: "https://getmsg.netlify.app/sahed",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
