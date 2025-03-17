@@ -3,7 +3,7 @@
 **A modern and sleek portfolio website built with cutting-edge web technologies, designed to showcase my projects, skills, and experience.**
 
 <div align="center" >
-    <img src="./demo/1.png" width="1200">
+    <img src="./demo/v2/1.png" width="1200">
 </div>
 
 ## Tech Stack & Tools
@@ -40,7 +40,7 @@
 
 ## 🎉 Preview:
 
-<img src="./demo/full.png" alt="Portfolio Screenshot" width="1200"/>
+<img src="./demo/v2/full.png" alt="Portfolio Screenshot" width="1200"/>
 
 ## ✨ Sahedul Islam Rony
 
