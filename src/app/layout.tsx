@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     siteName: "Sahedul Islam Rony",
     images: [
       {
-        url: "https://sahedul.me/og-image.png",
+        url: "https://sahedul.me/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Sahedul Islam Rony | Portfolio",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     title: "Sahedul Islam Rony | Software Engineer",
     description:
       "Explore my portfolio showcasing expertise in React, Next.js, Firebase, and full-stack  development.",
-    images: ["https://sahedul.me/og-image.png"],
+    images: ["https://sahedul.me/og-image.jpg"],
   },
   robots: "index, follow",
 };
