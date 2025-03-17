@@ -132,7 +132,7 @@ function RightSec() {
     >
       <div className="z-5 relative bg-transparent size-[20rem] sm:size-[25rem] lg:size-[30rem] flex justify-center items-center text-white text-2xl font-bold">
         <Image
-          src="/meNoBg.png"
+          src="/meNobg.png"
           alt="Sahedul Islam Rony"
           width={800}
           height={800}
