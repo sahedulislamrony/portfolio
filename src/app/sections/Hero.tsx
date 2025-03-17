@@ -66,9 +66,9 @@ function LeftSec() {
     <div className="flex-1 flex flex-col justify-start items-start py-12 px-4 md:px-8 lg:px-12 z-20 w-full">
       {/* Heading with Creative Layout */}
       <div className="relative w-full">
-        <h1 className="text-5xl md:text-4xl lg:text-5xl text-gray-100 font-poppins font-[900] leading-tight">
+        <h1 className="text-5xl md:text-4xl lg:text-5xl text-gray-100 font-poppins font-[900] leading-relaxed">
           Hi, I&apos;m{" "}
-          <span className="block mt-2 text-4xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">
+          <span className="block mt-2  text-4xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">
             Sahedul Islam Rony
           </span>
         </h1>
