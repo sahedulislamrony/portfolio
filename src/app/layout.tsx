@@ -26,9 +26,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Sahedul Islam Rony | Full-Stack Web Developer",
+  title: "Sahedul Islam Rony | Software Engineer",
   description:
-    "Hi, I'm Sahedul Islam Rony (Sahed), a passionate full-stack web developer specializing in Next.js, React, Tailwind CSS, and Firebase. Explore my projects, technical blogs, and open-source contributions.",
+    "Hi, I'm Sahedul Islam Rony, a passionate full-stack  developer specializing in Next.js, React, Tailwind CSS, and Firebase. Explore my projects, technical blogs, and open-source contributions.",
   manifest: "/manifest",
   keywords: [
     "Sahedul Islam Rony",
@@ -51,14 +51,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Sahedul Islam Rony", url: "https://sahedul.me" }],
   creator: "Sahedul Islam Rony",
   openGraph: {
-    title: "Sahedul Islam Rony | Full-Stack Web Developer",
+    title: "Sahedul Islam Rony | Software Engineer",
     description:
-      "I am Sahedul Islam Rony (Sahed), a CSE undergraduate at Jashore University of Science and Technology. Passionate about React, Next.js, and web development. Check out my portfolio for projects and insights.",
+      "I am Sahedul Islam Rony , a CSE undergraduate at Jashore University of Science and Technology. Passionate about React, Next.js, and web development. Check out my portfolio for projects and insights.",
     url: "https://sahedul.me",
     siteName: "Sahedul Islam Rony",
     images: [
       {
-        url: "https://sahedul.me/og-image.jpg",
+        url: "https://sahedul.me/og-image.png",
         width: 1200,
         height: 630,
         alt: "Sahedul Islam Rony | Portfolio",
@@ -71,10 +71,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@i_am_sahed",
     creator: "@i_am_sahed",
-    title: "Sahedul Islam Rony | Full-Stack Web Developer",
+    title: "Sahedul Islam Rony | Software Engineer",
     description:
-      "Explore my portfolio showcasing expertise in React, Next.js, Firebase, and full-stack web development.",
-    images: ["https://sahedul.me/og-image.jpg"],
+      "Explore my portfolio showcasing expertise in React, Next.js, Firebase, and full-stack  development.",
+    images: ["https://sahedul.me/og-image.png"],
   },
   robots: "index, follow",
 };

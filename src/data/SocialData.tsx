@@ -22,7 +22,7 @@ const socialData: Links[] = [
   {
     name: "Twitter",
     url: "https://x.com/i_am_sahed",
-    icon: <IconX className="size-6 hover:text-black" />,
+    icon: <IconX className="size-6 hover:text-gray-500" />,
     falBackIcon: <IconX className="size-6 hover:text-gray-500" />,
   },
   {
@@ -38,7 +38,7 @@ const socialData: Links[] = [
   {
     name: "GitHub",
     url: "https://github.com/sahedulislamrony",
-    icon: <IconGithub className="size-6 text-white hover:text-black" />,
+    icon: <IconGithub className="size-6 text-white hover:text-gray-500" />,
     falBackIcon: (
       <IconGithub className="size-6 text-white hover:text-gray-500" />
     ),

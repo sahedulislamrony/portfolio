@@ -16,8 +16,8 @@ export default function Education() {
           </h2>
         </div>
 
-        <div className="absolute top-20 left-0 h-48 w-48 md:h-96 md:w-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 animate-spin"></div>
-        <div className="absolute bottom-20 right-0 h-48 w-48 md:h-96 md:w-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 animate-spin"></div>
+        <div className="absolute top-20 left-0 h-48 w-48 md:h-96 md:w-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 "></div>
+        <div className="absolute bottom-20 right-0 h-48 w-48 md:h-96 md:w-96 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-3xl opacity-20 "></div>
 
         <div className="relative ">
           <div className="hidden sm:block absolute left-1/2 w-1 h-full bg-gradient-to-b from-purple-500 to-sky-500 transform -translate-x-1/2"></div>

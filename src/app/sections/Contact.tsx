@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 pb-20 bg-transparent overflow-hidden relative space-v"
+      className="py-20 pb-20 bg-transparent overflow-hidden relative space-v bg-[url('/blob-bg3.png')] bg-center bg-cover bg-no-repeat"
     >
       <div className=" mx-auto px-4 relative">
         <div className="text-center mb-16 font-poppins font-[900]">
@@ -14,7 +14,7 @@ export default function Contact() {
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-[url('/bgContact3.png')] bg-center bg-cover bg-no-repeat backdrop-blur-md rounded-xl shadow-xl shadow-gray-600/10 overflow-hidden flex flex-col md:flex-row">
+        <div className="max-w-4xl mx-auto  backdrop-blur-md rounded-xl  overflow-hidden flex flex-col md:flex-row border-1 border-gray-500">
           {/* Left Side - Contact Form */}
           <ContactForm />
 
@@ -49,7 +49,7 @@ function ContactLinks() {
         ))}
       </div>
 
-      <p className="text-gray-300 text-sm md:text-base mt-4 font-roboto font-[600] text-center">
+      <p className="text-gray-300 text-sm md:text-base mt-4 font-roboto font-[400] text-center">
         Reach out and let&apos;s create something amazing together.
       </p>
     </div>
