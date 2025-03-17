@@ -58,32 +58,42 @@ export default function HeroSection() {
     </div>
   );
 }
-
 function LeftSec() {
   const scroll = useScroll("projects");
   const download = useDownloadResume();
+
   return (
-    <div className="flex-1 flex flex-col justify-start items-start py-12 px-4 md:pr-2 md:pl-0 pt-7 z-20">
-      <h1 className="text-3xl md:text-4xl text-gray-100 font-poppins font-[900]">
-        Hi, I&apos;m
-        <span className="block mt-1.5 text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-white to-sky-500">
-          Sahedul Islam Rony
-        </span>
-      </h1>
-      <p className="text-sky-400 py-6 text-3xl md:leading-10 lg:leading-15 md:text-4xl lg:text-6xl font-poppins font-[900]">
-        Full Stack Developer & Security Enthusiast
+    <div className="flex-1 flex flex-col justify-start items-start py-12 px-4 md:px-8 lg:px-12 z-20 w-full">
+      {/* Heading with Creative Layout */}
+      <div className="relative w-full">
+        <h1 className="text-5xl md:text-4xl lg:text-5xl text-gray-100 font-poppins font-[900] leading-tight">
+          Hi, I&apos;m{" "}
+          <span className="block mt-2 text-4xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">
+            Sahedul Islam Rony
+          </span>
+        </h1>
+        {/* Decorative Line */}
+        <div className="absolute -bottom-4 left-0 w-1/2 h-1 bg-gradient-to-r from-sky-400 to-blue-600 rounded-full" />
+      </div>
+
+      {/* Subheading with Creative Typography */}
+      <p className="text-sky-400 py-8 text-3xl md:text-4xl lg:text-5xl font-poppins font-[900] leading-tight">
+        Full Stack Developer &<br />
+        <span className="text-gray-300">Security Enthusiast</span>
       </p>
-      <p className="font-roboto font-[500] text-base md:text-lg text-gray-300 mb-0 z-20 leading-relaxed">
-        I am passionate about building scalable, high-performance web
-        applications using clean code and modern technologies. I turn ideas into
-        reality with precision and efficiency{" "}
+
+      {/* Description with Improved Readability */}
+      <p className="font-roboto font-[500] text-base md:text-lg text-gray-300 mb-8 z-20 leading-relaxed max-w-2xl">
+        I build scalable, high-performance web apps with clean code and modern
+        tech. Turning ideas into reality, one line at a time.{" "}
         <IconSparkles className="inline text-sky-500" />
       </p>
 
-      <div className="flex flex-wrap gap-4 mt-10">
+      {/* Buttons with Creative Layout */}
+      <div className="flex flex-col md:flex-row gap-4 w-full">
         <button
           onClick={scroll}
-          className=" font-[700] flex gap-2 items-center space-x-2 text-white bg-gray-900/5 hover:bg-white/10 border border-gray-400  px-6 py-2 md:px-8 md:py-3 rounded-md w-fit"
+          className="font-[700] flex gap-2 items-center justify-center text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 px-8 py-3 rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 w-full md:w-auto"
           aria-label="Explore My Work"
         >
           <IconSparkles className="w-5 h-5 text-white" />
@@ -92,9 +102,10 @@ function LeftSec() {
 
         <button
           onClick={download}
-          className="text-black font-[700] flex gap-2 items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-2 md:px-8 md:py-3 rounded-md w-fit"
+          className="font-[700] flex gap-2 items-center justify-center text-white bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 px-8 py-3 rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 w-full md:w-auto"
+          aria-label="Download CV"
         >
-          <IconDownload className="w-5 h-5 text-black" />
+          <IconDownload className="w-5 h-5 text-white" />
           Download CV
         </button>
       </div>
@@ -121,7 +132,7 @@ function RightSec() {
     >
       <div className="z-5 relative bg-transparent size-[20rem] sm:size-[25rem] lg:size-[30rem] flex justify-center items-center text-white text-2xl font-bold">
         <Image
-          src="/rony2.png"
+          src="/meNoBg.png"
           alt="Sahedul Islam Rony"
           width={800}
           height={800}
@@ -134,7 +145,7 @@ function RightSec() {
           rotateOnHover={true}
           hue={0}
           forceHoverState={false}
-          className="absolute-center z-10 w-[calc(100%_+_10rem)] h-[calc(100%_+_10rem)]"
+          className="absolute-center z-10 w-[calc(100%_+_5rem)] h-[calc(100%_+_5rem)] sm:w-[calc(100%_+_10rem)] sm:h-[calc(100%_+_10rem)]"
         />
       </div>
     </div>
