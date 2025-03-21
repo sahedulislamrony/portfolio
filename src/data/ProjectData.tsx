@@ -26,6 +26,8 @@ const projects: Project[] = [
     title: "Anonymous Chat App",
     image: "/projects/chatApp2.png",
     imageBg: "bg-[#0e1217]",
+    link: "https://getmsg.netlify.app/",
+    repo: "https://github.com/sahedulislamrony/anonymous",
     features: [
       "Receive messages from anyone without exposing identity.",
       "Sign in with Google via Firebase Authentication.",
@@ -64,13 +66,11 @@ const projects: Project[] = [
         icon: <IconEncrypt />,
       },
     ],
-    link: "https://getmsg.netlify.app/",
-    repo: "https://github.com/sahedulislamrony/anonymous",
   },
   {
     title: "Portfolio Website",
     image: "/projects/portfolio.png",
-    imageBg: "bg-[#09090b]",
+    imageBg: "bg-[#000]",
     features: [
       "Responsive design for all devices.",
       "Dark mode toggle.",
@@ -78,6 +78,9 @@ const projects: Project[] = [
       "Optimized for performance and SEO.",
       "Modern and clean design.",
     ],
+
+    link: "https://sahedul.me/",
+    repo: "https://github.com/sahedulislamrony/portfolio",
     techStack: [
       {
         name: "React.js",
@@ -104,13 +107,13 @@ const projects: Project[] = [
         icon: <IconLock />,
       },
     ],
-    link: "https://sahedul.me/",
-    repo: "https://github.com/sahedulislamrony/portfolio",
   },
   {
     title: "Google Keep Clone",
     image: "/projects/keep.png",
     imageBg: "bg-[#fff]",
+    link: "https://keep11.web.app/",
+    repo: "https://github.com/sahedulislamrony/google-keep-clone",
     features: [
       "Fully responsive design",
       "Sign in with Google, Facebook, GitHub, or Twitter via Firebase Authentication.",
@@ -143,8 +146,6 @@ const projects: Project[] = [
         icon: <IconLock />,
       },
     ],
-    link: "https://keep11.web.app/",
-    repo: "https://github.com/sahedulislamrony/google-keep-clone",
   },
   {
     title: "React Quiz App",
@@ -157,6 +158,8 @@ const projects: Project[] = [
       "Sign in with Google via Firebase Authentication.",
       "User-friendly and intuitive UI",
     ],
+    link: "https://quiz-app02.web.app/",
+    repo: "https://github.com/sahedulislamrony/react-quiz-app",
     techStack: [
       {
         name: "React.js",
@@ -183,8 +186,6 @@ const projects: Project[] = [
         icon: <IconDatabase />,
       },
     ],
-    link: "https://quiz-app02.web.app/",
-    repo: "https://github.com/sahedulislamrony/react-quiz-app",
   },
 ];
 

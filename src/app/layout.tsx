@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Toaster } from "sonner";
 import { Black_Ops_One, Roboto, Poppins } from "next/font/google";
-import "./globals.css";
+import "@/styles/global.css";
 
 const Black_Ops = Black_Ops_One({
   variable: "--font-logo",
@@ -88,7 +88,7 @@ export default function RootLayout({
         className={` ${Black_Ops.variable} ${roboto.variable} ${poppins.variable} antialiased flex flex-col  items-center bg-black dark-scrollbar`}
         suppressHydrationWarning
       >
-        <Toaster richColors />
+        <Toaster richColors theme="dark" />
         {children}
       </body>
     </html>

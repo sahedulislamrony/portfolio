@@ -1,14 +1,13 @@
 "use client";
 
-import React from "react";
-import About from "./sections/About";
-import GetInTouch from "./sections/Contact";
-import Education from "./sections/Education";
-import Footer from "./sections/Footer";
-import Hero from "./sections/Hero";
-import Navbar from "./sections/Navbar";
-import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
+import About from "@/components/home/About";
+import GetInTouch from "@/components/home/Contact";
+import Education from "@/components/home/Education";
+import Footer from "@/components/Footer";
+import Hero from "@/components/home/Hero";
+import Navbar from "@/components/Navbar";
+import Projects from "@/components/home/Projects";
+import Skills from "@/components/home/Skills";
 
 export default function Home() {
   return (
