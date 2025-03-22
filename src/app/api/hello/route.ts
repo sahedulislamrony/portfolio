@@ -164,8 +164,7 @@ export async function POST(request: Request): Promise<Response> {
                 
                 ---
                 
-                This email was sent via the contact form on your portfolio website: https://example.com`;
-
+                This email was sent via the contact form on your portfolio website: https://sahedul.me`;
     // Send email using Resend
     const response = await resend.emails.send({
       from: verifiedEmail,
