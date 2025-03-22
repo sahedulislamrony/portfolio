@@ -29,7 +29,7 @@ export default function HeroSection() {
   return (
     <div
       ref={sectionRef}
-      role="hero"
+      role="banner"
       id="home"
       className={cn(
         "relative w-full overflow-hidden h-fit flex justify-center items-center bg-transparent pt-[5rem] space-v",
