@@ -15,8 +15,6 @@
 <img width="12" />
 <img src="https://skillicons.dev/icons?i=tailwind" height="30" alt="Tailwind CSS logo" />
 <img width="12" />
-<img src="https://skillicons.dev/icons?i=shadcn" height="30" alt="shadcn/ui logo" />
-<img width="12" />
 <img src="https://skillicons.dev/icons?i=vercel" height="30" alt="Vercel logo" />
 <img width="12" />
 <img src="https://skillicons.dev/icons?i=git" height="30" alt="Git logo" />
@@ -36,7 +34,7 @@
 - **Git & GitHub** – Version control and project collaboration tools.
 - **VS Code** – The preferred editor for efficient development.
 
-🔗 **Live Preview:** [**Portfolio Website**](https://www.sahedul.me/)
+🔗 **Live :** [**Portfolio Website**](https://www.sahedul.me/)
 
 ## 🎉 Preview:
 
